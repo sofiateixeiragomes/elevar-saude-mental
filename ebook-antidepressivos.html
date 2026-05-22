@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Antidepressivos sem medo · Elevar Saúde Mental</title>
+<meta name="description" content="Um guia honesto sobre antidepressivos — o que são, como funcionam, quanto tempo, efeitos, dependência, e o que perguntar.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'><rect width='200' height='200' fill='%23FAF7F2'/><path d='M100,128 C75,118 32,100 18,52 C62,66 93,96 100,128 Z' fill='%234D8A6B'/><path d='M100,128 C125,118 168,100 182,52 C138,66 107,96 100,128 Z' fill='%232D6A4F'/><circle cx='100' cy='38' r='14' fill='%23B5743A'/></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--verde:#2D6A4F;--verde-claro:#40916C;--verde-suave:#B7E4C7;--creme:#FAF7F2;--creme-escuro:#EDE8DF;--terra:#7C5C3E;--cinza:#3A3A3A;--cinza-claro:#666;--borda:#D9D2C2}
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{background:#E8E4DA;font-family:'DM Sans',sans-serif;color:var(--cinza);line-height:1.7;font-weight:300}
+  em{font-style:italic}
+  .serif{font-family:'Cormorant Garamond',serif;font-weight:300}
+
+  /* PÁGINAS A4 */
+  .page{width:210mm;min-height:297mm;background:var(--creme);margin:24px auto;padding:24mm 22mm 18mm;box-shadow:0 4px 28px rgba(0,0,0,.15);page-break-after:always;display:flex;flex-direction:column;position:relative}
+
+  /* CAPA */
+  .cover{background:linear-gradient(#2D6A4F,#2D6A4F);color:#fff;padding:0;justify-content:space-between;align-items:flex-start;display:flex;flex-direction:column;text-align:left;overflow:hidden;position:relative}
+  .cover::before{content:'';position:absolute;top:-150px;right:-150px;width:500px;height:500px;border-radius:50%;background:rgba(64,145,108,.28)}
+  .cover::after{content:'';position:absolute;bottom:-120px;left:-120px;width:380px;height:380px;border-radius:50%;background:rgba(183,228,199,.10)}
+  .cover-top,.cover-mid,.cover-bot{position:relative;z-index:1;padding:32mm 22mm 0}
+  .cover-mid{padding-top:0;padding-bottom:0;flex:1;display:flex;flex-direction:column;justify-content:center}
+  .cover-bot{padding:0 22mm 28mm}
+  .cover svg{height:64px;margin-bottom:32px}
+  .cover .meta{font-size:11px;letter-spacing:4px;text-transform:uppercase;color:var(--verde-suave);font-weight:500;margin-bottom:24px}
+  .cover h1{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:62px;line-height:1.05;letter-spacing:-1.5px;color:#fff;margin-bottom:18px}
+  .cover h1 em{color:var(--verde-suave)}
+  .cover .sub{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:22px;color:rgba(255,255,255,.85);max-width:540px;line-height:1.4}
+  .cover .divider{width:48px;height:1px;background:var(--verde-suave);margin:34px 0}
+  .cover .credit{font-size:11.5px;color:rgba(255,255,255,.7);letter-spacing:.6px;line-height:1.6}
+  .cover .credit strong{color:var(--verde-suave);font-weight:500}
+
+  /* CABEÇALHO DAS PÁGINAS INTERNAS */
+  .pg-head{display:flex;justify-content:space-between;align-items:center;padding-bottom:14px;border-bottom:1px solid var(--borda);margin-bottom:24px;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--cinza-claro)}
+  .pg-head svg{height:32px}
+  .pg-head .chap{font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--verde);font-size:13px;letter-spacing:.5px;text-transform:none;font-weight:500}
+
+  /* SUMÁRIO */
+  .toc h1{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:48px;color:var(--verde);margin-bottom:6px;line-height:1.1}
+  .toc h1 em{color:var(--verde-claro)}
+  .toc .sub{font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--cinza-claro);font-size:17px;margin-bottom:36px;padding-bottom:18px;border-bottom:1px solid var(--borda)}
+  .toc ol{list-style:none;padding:0;counter-reset:t}
+  .toc li{counter-increment:t;padding:11px 0;border-bottom:1px dotted var(--borda);display:flex;align-items:baseline;gap:14px;font-size:14.5px;line-height:1.4}
+  .toc li::before{content:counter(t,decimal-leading-zero);font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--verde-suave);font-size:18px;min-width:32px}
+  .toc li .t{color:var(--cinza);flex:1}
+  .toc li .p{color:var(--cinza-claro);font-size:12px;letter-spacing:.5px}
+
+  /* CONTEÚDO */
+  h2.chapter{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:40px;color:var(--verde);line-height:1.15;margin:6px 0 8px}
+  h2.chapter em{color:var(--verde-claro);font-style:italic}
+  .chapter-num{font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--verde-suave);font-size:26px;margin-bottom:4px}
+  .lead-text{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:18px;color:#444;line-height:1.6;margin:14px 0 28px;padding-bottom:18px;border-bottom:1px solid var(--borda)}
+
+  h3{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:22px;color:var(--verde);margin:24px 0 8px;line-height:1.25}
+  h3 em{font-style:italic}
+  h4{font-family:'DM Sans',sans-serif;font-weight:500;font-size:13px;color:var(--verde);margin:18px 0 6px;letter-spacing:1px;text-transform:uppercase}
+
+  p,li{font-size:13px;line-height:1.75;color:#333}
+  p+p,p+ul,p+ol,ul+p,ol+p{margin-top:10px}
+  ul,ol{padding-left:22px;margin:8px 0}
+  li{padding:3px 0}
+  strong{color:var(--verde);font-weight:500}
+  em.t{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:14px;color:var(--cinza)}
+
+  /* CALLOUTS — usando linear-gradient para forçar impressão de fundo */
+  .callout{background:linear-gradient(#fff,#fff);border:1px solid var(--borda);border-left:3px solid var(--verde-claro);padding:14px 18px;margin:18px 0;border-radius:3px;font-size:12.5px;line-height:1.7}
+  .callout strong{display:block;margin-bottom:4px;font-size:10.5px;letter-spacing:1.5px;text-transform:uppercase}
+  .callout.amber{border-left-color:#B45309;background:linear-gradient(#FEF7E7,#FEF7E7);color:#7C5A1A}
+  .callout.amber strong{color:#B45309}
+  .callout.red{border-left-color:#B91C1C;background:linear-gradient(#FEE2E2,#FEE2E2);color:#7F1D1D}
+  .callout.red strong{color:#B91C1C}
+  .callout.green{border-left-color:var(--verde);background:linear-gradient(#E8F5EE,#E8F5EE);color:#1B5638}
+  .callout.green strong{color:var(--verde)}
+
+  /* QUOTE */
+  blockquote{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:18px;color:var(--verde);border-left:2px solid var(--verde-claro);padding:8px 20px;margin:20px 0;line-height:1.5}
+
+  /* MEDOS — bloco especial */
+  .medo{background:linear-gradient(#fff,#fff);border:1px solid var(--borda);border-radius:4px;padding:16px 18px;margin:14px 0}
+  .medo .q{font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--terra);font-size:17px;margin-bottom:8px;line-height:1.35}
+  .medo .a{font-size:12.5px;color:#444;line-height:1.7}
+
+  /* GLOSSÁRIO */
+  .gloss{display:grid;grid-template-columns:auto 1fr;gap:8px 18px;margin-top:12px}
+  .gloss dt{font-family:'Cormorant Garamond',serif;font-weight:500;color:var(--verde);font-size:14px;padding-top:2px}
+  .gloss dd{font-size:12.5px;color:#444;line-height:1.65;padding-bottom:8px;border-bottom:1px solid var(--creme-escuro)}
+  .gloss dt:last-of-type+dd, .gloss dd:last-child{border-bottom:none}
+
+  /* RODAPÉ DA PÁGINA */
+  .pg-foot{margin-top:auto;padding-top:14px;border-top:1px solid var(--borda);display:flex;justify-content:space-between;align-items:center;font-size:9.5px;color:var(--cinza-claro);letter-spacing:.5px}
+  .pg-foot em{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:11px;color:var(--verde)}
+
+  /* PÁGINA FINAL — CTA */
+  .end{background:linear-gradient(#2D6A4F,#2D6A4F);color:#fff;text-align:center;justify-content:center;align-items:center;display:flex;flex-direction:column;padding:30mm 22mm;position:relative;overflow:hidden}
+  .end::before{content:'';position:absolute;top:-150px;left:-150px;width:480px;height:480px;border-radius:50%;background:rgba(64,145,108,.25)}
+  .end .inner{position:relative;z-index:1;max-width:560px}
+  .end svg{height:80px;margin-bottom:32px}
+  .end h2{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:42px;line-height:1.1;color:#fff;margin-bottom:18px}
+  .end h2 em{color:var(--verde-suave)}
+  .end p{font-size:15px;color:rgba(255,255,255,.88);line-height:1.7;margin-bottom:18px}
+  .end .url{font-family:'Cormorant Garamond',serif;font-size:22px;color:var(--verde-suave);margin-top:24px;letter-spacing:.5px}
+  .end .small{font-size:11px;color:rgba(255,255,255,.6);margin-top:38px;letter-spacing:.5px;line-height:1.7;padding-top:24px;border-top:1px solid rgba(183,228,199,.25)}
+
+  .toolbar{position:fixed;top:14px;right:14px;z-index:50;background:#fff;border:1px solid var(--borda);border-radius:3px;padding:8px 12px;font-size:12px;box-shadow:0 4px 14px rgba(0,0,0,.1);display:flex;gap:10px;align-items:center}
+  .toolbar button{background:var(--verde);color:#fff;border:none;cursor:pointer;padding:6px 14px;font-size:11px;letter-spacing:1px;text-transform:uppercase;border-radius:2px;font-family:'DM Sans',sans-serif;font-weight:500}
+  .toolbar button:hover{background:var(--verde-claro)}
+
+  /* Força impressão de cores de fundo em todos os elementos */
+  *,*::before,*::after{-webkit-print-color-adjust:exact !important;print-color-adjust:exact !important;color-adjust:exact !important}
+
+  @media print{
+    @page{size:A4;margin:0}
+    html,body{background:#fff;margin:0;padding:0}
+    .toolbar{display:none !important}
+    /* PÁGINAS DE CONTEÚDO: deixa o conteúdo fluir, sem cortar */
+    .page{
+      box-shadow:none;
+      margin:0 !important;
+      width:210mm;
+      min-height:297mm;
+      padding:20mm 22mm 16mm;
+      page-break-after:always;
+      break-after:page;
+    }
+    .page:last-child{page-break-after:auto;break-after:auto}
+    /* CAPA E FECHAMENTO: exatos 297mm, com cor de fundo */
+    .cover,.end{
+      height:297mm !important;
+      max-height:297mm !important;
+      min-height:297mm !important;
+      overflow:hidden;
+      background:#2D6A4F !important;
+    }
+    .cover *,.end *{color:inherit}
+    /* evita quebrar callouts, perguntas e títulos no meio */
+    .callout,.medo,blockquote,h3{break-inside:avoid;page-break-inside:avoid}
+    h2.chapter{break-after:avoid;page-break-after:avoid}
+    /* mantém cores em callouts */
+    .callout.amber{background:#FEF7E7 !important}
+    .callout.red{background:#FEE2E2 !important}
+    .callout.green{background:#E8F5EE !important}
+    .medo{background:#fff !important}
+  }
+</style>
+</head>
+<body>
+
+<div class="toolbar">
+  <button onclick="window.print()">Imprimir / Salvar PDF</button>
+</div>
+
+<!-- ============ CAPA ============ -->
+<div class="page cover">
+  <div class="cover-top">
+    <svg viewBox="0 0 400 280" xmlns="http://www.w3.org/2000/svg">
+      <path d="M200,128 C175,118 132,100 118,52 C162,66 193,96 200,128 Z" fill="#B7E4C7"/>
+      <path d="M200,128 C225,118 268,100 282,52 C238,66 207,96 200,128 Z" fill="#FFFFFF"/>
+      <circle cx="200" cy="38" r="13" fill="#E89B5A"/>
+      <text x="200" y="200" text-anchor="middle" font-family="Cormorant Garamond, serif" font-size="62" font-weight="500" letter-spacing="8" fill="#FFFFFF">ELEVAR</text>
+      <text x="200" y="238" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="14" letter-spacing="6" fill="#B7E4C7">SAÚDE MENTAL</text>
+    </svg>
+    <div class="meta">Material educativo · Edição I</div>
+  </div>
+
+  <div class="cover-mid">
+    <div style="padding:0 22mm">
+      <h1>Antidepressivos <em>sem medo</em>.</h1>
+      <div class="divider"></div>
+      <div class="sub">O que são, como funcionam, quanto tempo, e o que perguntar antes de começar.</div>
+    </div>
+  </div>
+
+  <div class="cover-bot">
+    <div class="credit">
+      Um guia honesto da <strong>Elevar Saúde Mental</strong><br>
+      elevarsaudemental.com.br
+    </div>
+  </div>
+</div>
+
+<!-- ============ SUMÁRIO ============ -->
+<div class="page toc">
+  <div class="pg-head">
+    <svg viewBox="0 0 400 280" xmlns="http://www.w3.org/2000/svg">
+      <path d="M200,128 C175,118 132,100 118,52 C162,66 193,96 200,128 Z" fill="#4D8A6B"/>
+      <path d="M200,128 C225,118 268,100 282,52 C238,66 207,96 200,128 Z" fill="#2D6A4F"/>
+      <circle cx="200" cy="38" r="13" fill="#B5743A"/>
+    </svg>
+    <span class="chap">Sumário</span>
+  </div>
+
+  <h1>O que <em>você vai</em> ler.</h1>
+  <div class="sub">Um percurso por dez ideias que costumam tirar o medo de quem está prestes a começar — ou está no meio de — um tratamento com antidepressivo.</div>
+
+  <ol>
+    <li><span class="t">Por que este guia existe</span><span class="p">·  03</span></li>
+    <li><span class="t">O que são (e o que não são) antidepressivos</span><span class="p">·  04</span></li>
+    <li><span class="t">Quando se usa — para muito além da depressão</span><span class="p">·  05</span></li>
+    <li><span class="t">Como funcionam, em linguagem direta</span><span class="p">·  06</span></li>
+    <li><span class="t">Por que demora tanto para fazer efeito</span><span class="p">·  07</span></li>
+    <li><span class="t">Os medos mais comuns, e o que dizer sobre eles</span><span class="p">·  08</span></li>
+    <li><span class="t">Efeitos colaterais — o que esperar, o que avisar</span><span class="p">·  10</span></li>
+    <li><span class="t">Por quanto tempo, e como parar quando for hora</span><span class="p">·  11</span></li>
+    <li><span class="t">O que importa mais do que o remédio</span><span class="p">·  12</span></li>
+    <li><span class="t">Sinais de que está funcionando · sinais de ajustar</span><span class="p">·  13</span></li>
+    <li><span class="t">Mini-glossário: ISRS, IRSN, tricíclicos e os outros</span><span class="p">·  14</span></li>
+    <li><span class="t">Quando procurar ajuda urgente</span><span class="p">·  15</span></li>
+  </ol>
+
+  <div class="pg-foot"><em>Elevar Saúde Mental</em><span>03 · Sumário</span></div>
+</div>
+
+<!-- ============ CAP 01 ============ -->
+<div class="page">
+  <div class="pg-head"><svg viewBox="0 0 400 280" xmlns="http://www.w3.org/2000/svg"><path d="M200,128 C175,118 132,100 118,52 C162,66 193,96 200,128 Z" fill="#4D8A6B"/><path d="M200,128 C225,118 268,100 282,52 C238,66 207,96 200,128 Z" fill="#2D6A4F"/><circle cx="200" cy="38" r="13" fill="#B5743A"/></svg><span class="chap">Antidepressivos sem medo · Cap. 01</span></div>
+
+  <div class="chapter-num">01</div>
+  <h2 class="chapter">Por que <em>este guia</em> existe.</h2>
+  <div class="lead-text">Antidepressivo é o medicamento sobre o qual mais ouvimos perguntas. E sobre o qual menos costuma haver resposta clara, antes da consulta.</div>
+
+  <p>Boa parte das pessoas que chegam ao consultório com uma indicação de antidepressivo já passou semanas — às vezes meses — pesquisando sozinha. Lendo bula. Vendo vídeo. Perguntando para amigo que tomou. Lendo comentário de internet. Chegando com mais medo do que começou.</p>
+
+  <p>Não é falha. O medo é razoável. Saúde mental é território historicamente cercado de estigma; medicação psiquiátrica carrega décadas de mitologia popular — uns dizendo "isso vicia", outros dizendo "isso muda quem você é", muitos prometendo curas mágicas, e quase ninguém oferecendo informação clara e medida.</p>
+
+  <p>Este guia foi escrito para ser exatamente isso: uma fonte de informação <strong>clara, medida e técnica</strong> — sem medo de te tratar como adulto, sem medo de dizer o que não sabemos, e sem promessa nenhuma.</p>
+
+  <blockquote>"Não escrevemos para te convencer a tomar antidepressivo. Escrevemos para que, se a indicação vier, você possa escutá-la sem pânico — e fazer as perguntas certas."</blockquote>
+
+  <p>Lê com calma. Volta nas partes que importam. E leva tuas dúvidas — as que ficarem — para a próxima consulta.</p>
+
+  <div class="callout amber">
+    <strong>Atenção</strong>
+    Este material é educativo. Não substitui consulta médica nem indica início, troca ou ajuste de medicação. Nenhuma informação aqui descreve seu caso individual — só uma conversa com um profissional pode fazer isso.
+  </div>
+
+  <div class="pg-foot"><em>Elevar Saúde Mental</em><span>03 · Cap. 01</span></div>
+</div>
+
+<!-- ============ CAP 02 ============ -->
+<div class="page">
+  <div class="pg-head"><svg viewBox="0 0 400 280" xmlns="http://www.w3.org/2000/svg"><path d="M200,128 C175,118 132,100 118,52 C162,66 193,96 200,128 Z" fill="#4D8A6B"/><path d="M200,128 C225,118 268,100 282,52 C238,66 207,96 200,128 Z" fill="#2D6A4F"/><circle cx="200" cy="38" r="13" fill="#B5743A"/></svg><span class="chap">Antidepressivos sem medo · Cap. 02</span></div>
+
+  <div class="chapter-num">02</div>
+  <h2 class="chapter">O que <em>são</em> (e o que não são) antidepressivos.</h2>
+  <div class="lead-text">Não são pílula de felicidade. Não são tranquilizante. Não viciam. E não são solução única para problema nenhum.</div>
+
+  <p>Antidepressivo é uma classe de medicamentos que age no funcionamento de neurotransmissores no cérebro — substâncias químicas que mensageiras entre os neurônios. Os mais usados hoje atuam, em diferentes graus, sobre <strong>serotonina, noradrenalina e dopamina</strong>.</p>
+
+  <h3>O que eles <em>não</em> são</h3>
+  <ul>
+    <li><strong>Não são "pílula de felicidade".</strong> Não tornam você feliz. Não criam emoções que não estavam ali.</li>
+    <li><strong>Não são tranquilizantes.</strong> Tranquilizante (benzodiazepínico, como Rivotril, Lexotan) é outra classe, com outro mecanismo e outro risco. Antidepressivo não dá efeito imediato de relaxamento.</li>
+    <li><strong>Não causam dependência química</strong> no sentido que esse termo costuma significar — não há "fissura", não há comportamento de busca, não criam tolerância como ocorre com substâncias de abuso. (Sobre interrupção, há nuances importantes que vamos ver no capítulo 08.)</li>
+    <li><strong>Não te tornam outra pessoa.</strong> Eles reduzem sintomas que estão atrapalhando você ser quem você é.</li>
+  </ul>
+
+  <h3>O que eles <em>são</em></h3>
+  <p>Medicamentos que, quando bem indicados e bem ajustados, <strong>diminuem a intensidade de sintomas</strong> — humor deprimido persistente, ansiedade desproporcional, ruminação obsessiva, prejuízo do sono, ataques de pânico, sensação de embotamento que não passa.</p>
+
+  <p>Diminuem a intensidade. Não tiram. Não fazem o problema desaparecer. Geralmente, devolvem à pessoa <strong>espaço interno suficiente</strong> para o restante do tratamento (psicoterapia, mudança de hábitos, articulação de rede, decisões de vida) acontecer com mais clareza.</p>
+
+  <blockquote>"O remédio não te coloca num lugar bom. Tira você do lugar muito ruim onde estava preso — para que o trabalho de cuidar possa começar."</blockquote>
+
+  <div class="pg-foot"><em>Elevar Saúde Mental</em><span>04 · Cap. 02</span></div>
+</div>
+
+<!-- ============ CAP 03 ============ -->
+<div class="page">
+  <div class="pg-head"><svg viewBox="0 0 400 280" xmlns="http://www.w3.org/2000/svg"><path d="M200,128 C175,118 132,100 118,52 C162,66 193,96 200,128 Z" fill="#4D8A6B"/><path d="M200,128 C225,118 268,100 282,52 C238,66 207,96 200,128 Z" fill="#2D6A4F"/><circle cx="200" cy="38" r="13" fill="#B5743A"/></svg><span class="chap">Antidepressivos sem medo · Cap. 03</span></div>
+
+  <div class="chapter-num">03</div>
+  <h2 class="chapter">Quando se usa — para <em>muito além</em> da depressão.</h2>
+  <div class="lead-text">O nome ficou. O uso evoluiu. Quem recebe antidepressivo hoje frequentemente não está deprimido — está sendo tratado de outra coisa.</div>
+
+  <p>O nome "antidepressivo" foi cunhado nos anos 1950, quando essas medicações foram descobertas no contexto do tratamento da depressão. De lá pra cá, descobriu-se que o mesmo mecanismo é útil em uma gama bem mais ampla de condições.</p>
+
+  <h3>Indicações comuns hoje</h3>
+  <ul>
+    <li><strong>Transtornos de ansiedade</strong> (ansiedade generalizada, pânico, fobia social) — talvez a indicação mais frequente atualmente</li>
+    <li><strong>Transtorno obsessivo-compulsivo (TOC)</strong></li>
+    <li><strong>Transtorno de estresse pós-traumático (TEPT)</strong></li>
+    <li><strong>Bulimia e transtorno de compulsão alimentar</strong></li>
+    <li><strong>Dor crônica</strong>: fibromialgia, neuropatia diabética, enxaqueca preventiva — alguns antidepressivos têm ação analgésica independente do efeito antidepressivo</li>
+    <li><strong>Insônia crônica</strong> de certo perfil</li>
+    <li><strong>Sintomas climatéricos</strong> (fogachos da menopausa) — alguns ISRS são usados por essa indicação</li>
+    <li><strong>Ejaculação precoce</strong></li>
+    <li><strong>Tabagismo</strong> (a bupropiona, especificamente, é usada como apoio à cessação)</li>
+    <li><strong>Depressão</strong>, claro — em diversas formas e intensidades</li>
+  </ul>
+
+  <p>Por isso, é comum que alguém receba uma prescrição de "antidepressivo" sem estar deprimido. O nome é um vestígio histórico — não descreve mais o universo de uso real.</p>
+
+  <div class="callout">
+    <strong>Vale guardar</strong>
+    Se você recebeu uma indicação e a justificativa não foi clara para você, vale perguntar diretamente: "para qual sintoma específico esse medicamento foi indicado, e o que vamos observar para saber se ele está ajudando?". Essa é a pergunta que define o tratamento.
+  </div>
+
+  <div class="pg-foot"><em>Elevar Saúde Mental</em><span>05 · Cap. 03</span></div>
+</div>
+
+<!-- ============ CAP 04 ============ -->
+<div class="page">
+  <div class="pg-head"><svg viewBox="0 0 400 280" xmlns="http://www.w3.org/2000/svg"><path d="M200,128 C175,118 132,100 118,52 C162,66 193,96 200,128 Z" fill="#4D8A6B"/><path d="M200,128 C225,118 268,100 282,52 C238,66 207,96 200,128 Z" fill="#2D6A4F"/><circle cx="200" cy="38" r="13" fill="#B5743A"/></svg><span class="chap">Antidepressivos sem medo · Cap. 04</span></div>
+
+  <div class="chapter-num">04</div>
+  <h2 class="chapter">Como <em>funcionam</em>, em linguagem direta.</h2>
+  <div class="lead-text">Os antidepressivos agem na comunicação entre neurônios. E não é tão simples quanto "aumentar a serotonina".</div>
+
+  <p>A explicação que circulou nos anos 1990 — "depressão é falta de serotonina, antidepressivo repõe a serotonina" — está hoje considerada incompleta, quando não enganosa. A neurociência avançou. A verdade é mais complexa, mais interessante, e mais humilde.</p>
+
+  <h3>O que sabemos</h3>
+  <p>Antidepressivos atuam sobre <strong>vias de neurotransmissão</strong> — serotonina, noradrenalina, dopamina, e outras. Eles alteram a forma como os neurônios se comunicam, geralmente aumentando a disponibilidade desses mensageiros químicos no espaço entre os neurônios (a fenda sináptica).</p>
+
+  <p>Esse efeito é detectável em horas. Mas o efeito clínico — você se sentir melhor — leva semanas para aparecer. Por quê?</p>
+
+  <h3>A hipótese da plasticidade neural</h3>
+  <p>Hoje, a explicação mais aceita é que o efeito antidepressivo verdadeiro vem de uma mudança progressiva na <strong>plasticidade neural</strong> — a capacidade do cérebro de criar novas conexões, modificar redes neuronais existentes, e responder de forma diferente aos mesmos estímulos.</p>
+
+  <p>O remédio cria as condições químicas para que essa reorganização aconteça. O processo em si leva tempo. É por isso que demora — e por isso o efeito é duradouro, não desaparecendo quando a dose do dia acaba.</p>
+
+  <blockquote>"Pensa numa horta: o remédio é o adubo. O adubo não faz a planta crescer instantaneamente. Cria condição. A planta cresce no seu tempo."</blockquote>
+
+  <h3>O que isso significa na prática</h3>
+  <ul>
+    <li>Não tem efeito imediato — não funciona como "tomar e melhorar"</li>
+    <li>A dose certa não é a mais alta — é a menor dose que produz o efeito desejado com o menor número de efeitos colaterais</li>
+    <li>Não dá pra "tomar quando precisar" — precisa de regularidade para construir o efeito</li>
+    <li>A interrupção brusca interrompe o processo — não causa "abstinência" no sentido clássico, mas pode provocar sintomas desagradáveis que confundem com a doença voltando (mais sobre isso no cap. 08)</li>
+  </ul>
+
+  <div class="pg-foot"><em>Elevar Saúde Mental</em><span>06 · Cap. 04</span></div>
+</div>
+
+<!-- ============ CAP 05 ============ -->
+<div class="page">
+  <div class="pg-head"><svg viewBox="0 0 400 280" xmlns="http://www.w3.org/2000/svg"><path d="M200,128 C175,118 132,100 118,52 C162,66 193,96 200,128 Z" fill="#4D8A6B"/><path d="M200,128 C225,118 268,100 282,52 C238,66 207,96 200,128 Z" fill="#2D6A4F"/><circle cx="200" cy="38" r="13" fill="#B5743A"/></svg><span class="chap">Antidepressivos sem medo · Cap. 05</span></div>
+
+  <div class="chapter-num">05</div>
+  <h2 class="chapter">Por que demora <em>tanto</em> para fazer efeito.</h2>
+  <div class="lead-text">A pergunta que mais aparece nas primeiras semanas. E a resposta que mais protege quem está começando.</div>
+
+  <p>Antidepressivos costumam levar entre <strong>duas e seis semanas</strong> para começar a mostrar efeito clínico consistente. Algumas pessoas sentem mudança antes; outras precisam de mais tempo. O ajuste de dose, quando necessário, soma mais semanas.</p>
+
+  <h3>O que costuma acontecer nas primeiras semanas</h3>
+  <ul>
+    <li><strong>Efeitos colaterais surgem antes do efeito terapêutico.</strong> Náusea, dor de cabeça, sonolência, alteração de apetite, leve aumento de ansiedade nos primeiros dias — tudo isso pode aparecer já na primeira semana, e geralmente passa sozinho.</li>
+    <li><strong>Você pode sentir que piorou.</strong> Especialmente em quadros ansiosos, há uma piora transitória antes da melhora. É esperado.</li>
+    <li><strong>Você pode achar que o remédio "não está fazendo nada".</strong> Provavelmente está. O efeito ainda está se construindo.</li>
+  </ul>
+
+  <h3>Por que isso é importante</h3>
+  <p>Muita gente abandona o tratamento entre o 7º e o 14º dia — exatamente quando os efeitos colaterais já apareceram mas o efeito clínico ainda não. É a janela mais arriscada do tratamento, e a mais previsível.</p>
+
+  <div class="callout green">
+    <strong>Combinado importante</strong>
+    Antes de começar, combine com o médico um plano para as primeiras 4 semanas — incluindo um contato intermediário (consulta breve ou mensagem) por volta da segunda semana, para acompanhar como você está se sentindo e ajustar se necessário.
+  </div>
+
+  <h3>O que esperar a partir da quarta semana</h3>
+  <p>Sintomas como sono, apetite, energia matinal e capacidade de concentração costumam responder primeiro. Humor e ânimo respondem depois. Capacidade de prazer (anedonia) e ansiedade antecipatória costumam ser dos últimos a melhorar.</p>
+
+  <p>Por isso, a avaliação se o medicamento "está funcionando" não se faz na primeira semana — se faz após seis a oito semanas, idealmente com indicadores combinados antes do início (mais sobre isso no cap. 10).</p>
+
+  <div class="pg-foot"><em>Elevar Saúde Mental</em><span>07 · Cap. 05</span></div>
+</div>
+
+<!-- ============ CAP 06 — MEDOS ============ -->
+<div class="page">
+  <div class="pg-head"><svg viewBox="0 0 400 280" xmlns="http://www.w3.org/2000/svg"><path d="M200,128 C175,118 132,100 118,52 C162,66 193,96 200,128 Z" fill="#4D8A6B"/><path d="M200,128 C225,118 268,100 282,52 C238,66 207,96 200,128 Z" fill="#2D6A4F"/><circle cx="200" cy="38" r="13" fill="#B5743A"/></svg><span class="chap">Antidepressivos sem medo · Cap. 06</span></div>
+
+  <div class="chapter-num">06</div>
+  <h2 class="chapter">Os <em>seis medos</em> mais comuns, e o que dizer sobre eles.</h2>
+  <div class="lead-text">Cada um desses medos tem fundamento parcial. Nenhum é a história inteira. Aqui vai a versão completa.</div>
+
+  <div class="medo">
+    <div class="q">"Vou ficar dopada, sem sentir nada."</div>
+    <div class="a">Antidepressivo não é tranquilizante. Não tem efeito de sedação ou anestesia emocional, salvo em doses muito acima da terapêutica ou em quadros específicos onde algum embotamento afetivo aparece como efeito colateral. Quando isso ocorre — e ocorre — é motivo para conversar com o médico e considerar troca ou ajuste, não para abandonar tratamento.</div>
+  </div>
+
+  <div class="medo">
+    <div class="q">"Vou ficar dependente."</div>
+    <div class="a">Antidepressivo não causa dependência química. Não cria fissura, comportamento de busca, ou tolerância no sentido de "precisar de mais para mesmo efeito". O que pode acontecer é <em>síndrome de descontinuação</em> se a interrupção for brusca — sintomas físicos transitórios (tontura, formigamento, sensação elétrica) que duram dias e cessam. Isso é por que parar precisa ser gradual e orientado, não porque a substância vicia.</div>
+  </div>
+
+  <div class="medo">
+    <div class="q">"Vou engordar muito."</div>
+    <div class="a">O ganho de peso é efeito colateral possível, mas varia enormemente entre medicações e entre pessoas. Alguns antidepressivos têm risco baixo. Alguns têm risco moderado. Pouquíssimos têm risco alto. Se peso é um tema importante pra você, levante isso na consulta — há sempre opções com perfil mais favorável. E vale separar: parte do "ganho de peso" reportado vem da própria depressão saindo (apetite voltando, energia voltando), não do remédio.</div>
+  </div>
+
+  <div class="medo">
+    <div class="q">"Vou perder libido / não vou conseguir ter orgasmo."</div>
+    <div class="a">Disfunção sexual é um dos efeitos colaterais mais frequentes (e mais subreportados) dos antidepressivos, especialmente dos ISRS. Pode aparecer como diminuição de desejo, dificuldade de excitação, atraso ou ausência de orgasmo. <strong>É um efeito real, e merece ser discutido abertamente.</strong> Há condutas: troca de medicação, ajuste de dose, medicações adjuvantes, "férias terapêuticas" em casos específicos. Não é algo que você precisa aceitar em silêncio.</div>
+  </div>
+
+  <div class="medo">
+    <div class="q">"Vou deixar de ser eu."</div>
+    <div class="a">Esse é o medo mais profundo, e merece a resposta mais cuidadosa. Antidepressivos não alteram personalidade, gosto, memória ou identidade. O que muitos pacientes descrevem, retroativamente, é o contrário: "eu voltei a ser eu". Mas há um relato mais raro e válido de embotamento — sensação de estar "menos vivo", emoções mais achatadas — que algumas pessoas referem com algumas medicações. Se isso aparecer, é informação clínica importante para ajustar.</div>
+  </div>
+
+  <div class="medo">
+    <div class="q">"Vou ter que tomar pra sempre."</div>
+    <div class="a">Para a maioria das pessoas, não. O tempo de tratamento depende da condição, da gravidade, do histórico, de fatores de proteção, e de como o quadro responde. Para um primeiro episódio de depressão, o tempo costuma ser de 6 a 12 meses após a remissão dos sintomas. Para quadros recorrentes ou crônicos, pode ser maior. Para alguns transtornos específicos (como bipolaridade, ou alguns casos de TOC), o tratamento pode mesmo precisar ser de longo prazo. Isso é uma <strong>conversa para ter ao longo do tratamento</strong>, não uma decisão fechada no primeiro dia.</div>
+  </div>
+
+  <div class="pg-foot"><em>Elevar Saúde Mental</em><span>08 · Cap. 06</span></div>
+</div>
+
+<!-- ============ CAP 07 — EFEITOS COLATERAIS ============ -->
+<div class="page">
+  <div class="pg-head"><svg viewBox="0 0 400 280" xmlns="http://www.w3.org/2000/svg"><path d="M200,128 C175,118 132,100 118,52 C162,66 193,96 200,128 Z" fill="#4D8A6B"/><path d="M200,128 C225,118 268,100 282,52 C238,66 207,96 200,128 Z" fill="#2D6A4F"/><circle cx="200" cy="38" r="13" fill="#B5743A"/></svg><span class="chap">Antidepressivos sem medo · Cap. 07</span></div>
+
+  <div class="chapter-num">07</div>
+  <h2 class="chapter">Efeitos colaterais — <em>o que esperar</em>, o que avisar.</h2>
+  <div class="lead-text">Quase todo antidepressivo tem efeitos colaterais. Quase todos passam. Saber o que é normal e o que merece ligação é o que tira o medo.</div>
+
+  <h3>Efeitos comuns nas primeiras 1–2 semanas (e que costumam passar)</h3>
+  <ul>
+    <li><strong>Náusea</strong>, especialmente nos primeiros dias. Tomar com alimento ajuda.</li>
+    <li><strong>Sonolência</strong> ou, ao contrário, <strong>insônia leve</strong> — depende do medicamento. Ajuste do horário da tomada pode resolver.</li>
+    <li><strong>Dor de cabeça</strong>, geralmente leve e transitória.</li>
+    <li><strong>Boca seca</strong>, alterações leves de apetite, gases.</li>
+    <li><strong>Leve aumento da ansiedade</strong> nos primeiros 7–10 dias, principalmente com ISRS em quadros ansiosos.</li>
+    <li><strong>Tontura</strong> nos primeiros dias, especialmente ao se levantar rapidamente.</li>
+  </ul>
+
+  <p>Essas são, em geral, sintomas que melhoram à medida que o corpo se adapta. Vale tolerar com paciência nas primeiras duas semanas, com contato com o médico se forem intensos.</p>
+
+  <h3>Efeitos a relatar ao médico (sem urgência, mas com prioridade)</h3>
+  <ul>
+    <li>Disfunção sexual de qualquer tipo</li>
+    <li>Ganho ou perda significativos de peso</li>
+    <li>Embotamento afetivo persistente (sensação de "menos vivo")</li>
+    <li>Sudorese excessiva, especialmente noturna</li>
+    <li>Tremor fino nas mãos</li>
+    <li>Cansaço persistente, sonolência diurna que não passa</li>
+    <li>Constipação significativa</li>
+  </ul>
+
+  <h3>Sinais para contato imediato</h3>
+  <div class="callout red">
+    <strong>Procure ajuda imediata se</strong>
+    Aparecer ou aumentar pensamento de se ferir ou se matar (especialmente nos primeiros 30 dias e em pessoas jovens) · Sinais de reação alérgica (rash, inchaço, falta de ar) · Confusão mental importante, agitação intensa, febre alta com rigidez muscular (síndrome serotoninérgica é rara, mas grave) · Sangramento incomum (alguns antidepressivos podem aumentar levemente o risco em pessoas predispostas).
+  </div>
+
+  <h3>O que não tolerar em silêncio</h3>
+  <p>Há um hábito cultural de "aguentar o efeito colateral porque o remédio está fazendo bem". Esse equilíbrio é real, mas não precisa ser silencioso. Quase sempre há ajustes — de dose, de horário, de medicamento, ou de medicação adjuvante — que reduzem efeito colateral sem perder efeito clínico. <strong>Conta tudo, sem filtro.</strong></p>
+
+  <div class="pg-foot"><em>Elevar Saúde Mental</em><span>10 · Cap. 07</span></div>
+</div>
+
+<!-- ============ CAP 08 — DURAÇÃO E PARAR ============ -->
+<div class="page">
+  <div class="pg-head"><svg viewBox="0 0 400 280" xmlns="http://www.w3.org/2000/svg"><path d="M200,128 C175,118 132,100 118,52 C162,66 193,96 200,128 Z" fill="#4D8A6B"/><path d="M200,128 C225,118 268,100 282,52 C238,66 207,96 200,128 Z" fill="#2D6A4F"/><circle cx="200" cy="38" r="13" fill="#B5743A"/></svg><span class="chap">Antidepressivos sem medo · Cap. 08</span></div>
+
+  <div class="chapter-num">08</div>
+  <h2 class="chapter">Por quanto tempo, e como <em>parar</em> quando for hora.</h2>
+  <div class="lead-text">A pergunta sobre "quanto tempo" tem resposta clínica, não comercial. E a maneira de parar importa quase tanto quanto a de começar.</div>
+
+  <h3>Tempo médio de tratamento</h3>
+  <ul>
+    <li><strong>Primeiro episódio de depressão moderada</strong> — geralmente 6 a 12 meses <em>após</em> a remissão completa dos sintomas</li>
+    <li><strong>Episódio recorrente</strong> (segundo, terceiro) — geralmente 2 anos ou mais após a remissão</li>
+    <li><strong>Depressão crônica ou múltiplos episódios anteriores</strong> — frequentemente tratamento de longo prazo</li>
+    <li><strong>Transtornos de ansiedade</strong>, TOC e TEPT — costumam exigir tratamento de 1 a 2 anos no mínimo, com avaliação periódica</li>
+    <li><strong>Outras indicações</strong> (dor crônica, climatério, etc.) — dependem do quadro de base</li>
+  </ul>
+
+  <p>Esses prazos não são regras rígidas — são pontos de partida para a conversa. Quem decide o momento de retirar é a dupla você + médico, com base em como o quadro se estabilizou, em quais fatores de proteção estão presentes, e em qual o risco aceitável de recidiva.</p>
+
+  <h3>Como se "desmama" — o ponto importante</h3>
+  <p>Antidepressivo <strong>nunca</strong> se interrompe de uma vez. A retirada deve ser gradual, em semanas, com redução progressiva da dose, sob orientação. Por quê?</p>
+
+  <p>Porque alguns antidepressivos provocam <strong>síndrome de descontinuação</strong> — um conjunto de sintomas físicos e psíquicos transitórios, que podem incluir:</p>
+  <ul>
+    <li>Tontura, sensação de "andar bêbado"</li>
+    <li>Sensação elétrica na cabeça ("brain zaps")</li>
+    <li>Formigamento, dormência</li>
+    <li>Náusea, dor de cabeça</li>
+    <li>Insônia, sonhos vívidos</li>
+    <li>Irritabilidade, ansiedade aumentada, choro fácil</li>
+    <li>Sensação tipo gripal leve</li>
+  </ul>
+
+  <p>Esses sintomas <strong>não são abstinência de droga</strong>. Não significam que você ficou viciada. Significam que o cérebro está se readaptando à ausência do medicamento que estava ali todos os dias. Retirada gradual reduz drasticamente esses sintomas.</p>
+
+  <div class="callout amber">
+    <strong>Nunca pare por conta própria</strong>
+    Mesmo que você se sinta plenamente bem. A decisão de retirar — e o ritmo da retirada — precisa ser clínica. Parar abruptamente é a forma mais comum de transformar um tratamento bem-sucedido em uma recidiva evitável.
+  </div>
+
+  <h3>E se eu precisar voltar?</h3>
+  <p>Voltar a precisar do remédio depois de um período sem ele não é fracasso — nem seu, nem do tratamento. É informação clínica útil. Há quadros que naturalmente recidivam; há fatores de vida que reativam vulnerabilidades; há contextos que pedem retomada. Voltar é a coisa certa a fazer quando é necessário.</p>
+
+  <div class="pg-foot"><em>Elevar Saúde Mental</em><span>11 · Cap. 08</span></div>
+</div>
+
+<!-- ============ CAP 09 — O QUE IMPORTA MAIS ============ -->
+<div class="page">
+  <div class="pg-head"><svg viewBox="0 0 400 280" xmlns="http://www.w3.org/2000/svg"><path d="M200,128 C175,118 132,100 118,52 C162,66 193,96 200,128 Z" fill="#4D8A6B"/><path d="M200,128 C225,118 268,100 282,52 C238,66 207,96 200,128 Z" fill="#2D6A4F"/><circle cx="200" cy="38" r="13" fill="#B5743A"/></svg><span class="chap">Antidepressivos sem medo · Cap. 09</span></div>
+
+  <div class="chapter-num">09</div>
+  <h2 class="chapter">O que importa <em>mais</em> do que o remédio.</h2>
+  <div class="lead-text">Esse é um capítulo curto, mas talvez o mais importante de todos.</div>
+
+  <p>Em quadros leves a moderados, a literatura científica é consistente em mostrar que <strong>antidepressivo isolado costuma ter eficácia menor</strong> do que antidepressivo combinado com outros fatores terapêuticos. E em alguns casos, esses outros fatores são, sozinhos, suficientes.</p>
+
+  <h3>O que importa, em ordem aproximada</h3>
+  <ol>
+    <li><strong>Sono regular e suficiente.</strong> Quase nenhum tratamento funciona em quem dorme mal e em horário irregular.</li>
+    <li><strong>Movimento corporal regular.</strong> A literatura sobre exercício como tratamento adjuvante (e em alguns casos primário) de depressão e ansiedade é robusta.</li>
+    <li><strong>Psicoterapia</strong>, especialmente abordagens com evidência consolidada para sua condição. Para depressão e ansiedade, TCC, ACT, terapia interpessoal, entre outras.</li>
+    <li><strong>Rede de relações vivas</strong> — não muitas pessoas, mas alguma. Isolamento é fator de manutenção dos quadros.</li>
+    <li><strong>Sentido</strong>. Algo que te ancore — projeto, vocação, fé, criação, cuidado de alguém. Sentido não cura depressão, mas faz tratamento funcionar.</li>
+    <li><strong>Redução de fatores que mantêm o quadro</strong> — álcool em excesso, uso de cannabis em quadro ansioso, ambiente tóxico de trabalho, relação abusiva. Sem mexer nisso, o remédio luta sozinho.</li>
+  </ol>
+
+  <blockquote>"Antidepressivo é uma das ferramentas. Não é a única, nem necessariamente a principal. É a que costuma chamar mais atenção — e a que mais carrega medo. Por isso este e-book existe."</blockquote>
+
+  <p>Quem te trata bem te ajuda a olhar para todas essas frentes — não só para a receita.</p>
+
+  <div class="pg-foot"><em>Elevar Saúde Mental</em><span>12 · Cap. 09</span></div>
+</div>
+
+<!-- ============ CAP 10 — SINAIS ============ -->
+<div class="page">
+  <div class="pg-head"><svg viewBox="0 0 400 280" xmlns="http://www.w3.org/2000/svg"><path d="M200,128 C175,118 132,100 118,52 C162,66 193,96 200,128 Z" fill="#4D8A6B"/><path d="M200,128 C225,118 268,100 282,52 C238,66 207,96 200,128 Z" fill="#2D6A4F"/><circle cx="200" cy="38" r="13" fill="#B5743A"/></svg><span class="chap">Antidepressivos sem medo · Cap. 10</span></div>
+
+  <div class="chapter-num">10</div>
+  <h2 class="chapter">Sinais de que <em>está funcionando</em> · sinais de <em>ajustar</em>.</h2>
+  <div class="lead-text">Saber o que observar evita o erro mais comum: trocar de remédio cedo demais (achando que não funcionou) ou aguentar quadro estagnado por tempo demais (achando que ainda vai melhorar).</div>
+
+  <h3>Sinais de que está começando a funcionar (4 a 8 semanas)</h3>
+  <ul>
+    <li>Sono melhora — adormece com mais facilidade, dorme mais profundo, acorda menos vezes</li>
+    <li>Apetite se reorganiza (em qualquer direção — quem comia demais por ansiedade come menos; quem não conseguia comer volta a sentir fome)</li>
+    <li>Energia matinal volta — a sensação de "não consigo levantar" diminui</li>
+    <li>Capacidade de concentração começa a voltar</li>
+    <li>Pequenos prazeres voltam a ser pequenos prazeres (cafezinho, música, sair de casa) — sinal de redução da anedonia</li>
+    <li>Ruminação mental — aquele loop de pensamentos repetitivos — diminui de intensidade</li>
+    <li>Ansiedade antecipatória reduz</li>
+    <li>Você consegue chorar quando precisa — ou parar de chorar quando precisa</li>
+  </ul>
+
+  <h3>Sinais de que precisa ajustar (após 6–8 semanas em dose adequada)</h3>
+  <ul>
+    <li>Nenhuma mudança perceptível em sintomas-alvo</li>
+    <li>Melhora parcial estagnada por semanas</li>
+    <li>Efeitos colaterais intensos que não passam</li>
+    <li>Embotamento afetivo persistente</li>
+    <li>Surgimento de sintomas novos</li>
+    <li>Sensação subjetiva clara de que "isso não é pra mim"</li>
+  </ul>
+
+  <div class="callout green">
+    <strong>Indicadores combinados antes de começar</strong>
+    Esse é o melhor truque de tratamento bem feito: na primeira consulta, combine com o médico três a cinco indicadores concretos para observar nas próximas semanas — coisas mensuráveis pra você. Exemplos: "número de dias por semana que consigo levantar antes das 8h", "número de ataques de pânico por semana", "se eu volto a ter prazer em [atividade específica]". Indicadores genéricos como "estar melhor" são difíceis de avaliar. Indicadores concretos te dão clareza sobre se ajustar ou seguir.
+  </div>
+
+  <div class="pg-foot"><em>Elevar Saúde Mental</em><span>13 · Cap. 10</span></div>
+</div>
+
+<!-- ============ CAP 11 — GLOSSÁRIO ============ -->
+<div class="page">
+  <div class="pg-head"><svg viewBox="0 0 400 280" xmlns="http://www.w3.org/2000/svg"><path d="M200,128 C175,118 132,100 118,52 C162,66 193,96 200,128 Z" fill="#4D8A6B"/><path d="M200,128 C225,118 268,100 282,52 C238,66 207,96 200,128 Z" fill="#2D6A4F"/><circle cx="200" cy="38" r="13" fill="#B5743A"/></svg><span class="chap">Antidepressivos sem medo · Cap. 11</span></div>
+
+  <div class="chapter-num">11</div>
+  <h2 class="chapter"><em>Mini-glossário</em>: ISRS, IRSN, tricíclicos e os outros.</h2>
+  <div class="lead-text">Os nomes das classes não importam para a vida cotidiana, mas saber distinguir ajuda na conversa com o médico e na leitura de bula.</div>
+
+  <dl class="gloss">
+    <dt>ISRS</dt>
+    <dd><strong>Inibidores Seletivos da Recaptação de Serotonina.</strong> Classe mais usada hoje. Atuam aumentando a disponibilidade de serotonina na fenda sináptica. Exemplos comerciais conhecidos: fluoxetina, sertralina, escitalopram, paroxetina, citalopram. Em geral, perfil de segurança favorável, efeitos colaterais mais comuns: náusea inicial, disfunção sexual, alteração de sono.</dd>
+
+    <dt>IRSN</dt>
+    <dd><strong>Inibidores de Recaptação de Serotonina e Noradrenalina.</strong> Atuam sobre dois neurotransmissores. Exemplos: venlafaxina, duloxetina, desvenlafaxina. Costumam ser usados quando a resposta a ISRS não foi adequada, ou quando há componentes específicos (dor crônica, fibromialgia, sintomas com forte componente de baixa energia).</dd>
+
+    <dt>Tricíclicos</dt>
+    <dd>Classe mais antiga (anos 1960). Eficazes, com mecanismo de ação amplo. Hoje usados menos como primeira escolha por causa do perfil de efeitos colaterais (boca seca, constipação, sonolência, ganho de peso) e do risco em overdose. Mas seguem sendo importantes — especialmente em dor crônica, enxaqueca preventiva, e alguns quadros refratários. Exemplos: amitriptilina, nortriptilina, clomipramina.</dd>
+
+    <dt>IMAO</dt>
+    <dd>Inibidores da Monoamina Oxidase. Classe muito antiga e potente, hoje pouco usada devido a interações alimentares e medicamentosas. Reservada a quadros refratários, em uso especializado.</dd>
+
+    <dt>Atípicos</dt>
+    <dd>Categoria "guarda-chuva" para antidepressivos que não se encaixam nas classes acima. Exemplos: bupropiona (sem efeito sobre serotonina; favorece energia e cessação de tabagismo), mirtazapina (favorece sono e apetite), trazodona (frequentemente usado em baixa dose para insônia), vortioxetina, agomelatina.</dd>
+
+    <dt>Benzodiazepínicos</dt>
+    <dd>Importante: <strong>não são antidepressivos</strong>. São tranquilizantes (Rivotril, Lexotan, Valium, Frontal). Outra classe, outro mecanismo, outro perfil de risco — incluindo risco real de dependência. Frequentemente são confundidos. Se você está em dúvida sobre o que está tomando, pergunte explicitamente: "esse remédio é antidepressivo ou ansiolítico?"</dd>
+  </dl>
+
+  <div class="callout">
+    <strong>Sobre "qual é o melhor"</strong>
+    Não há resposta universal. A melhor medicação para você é a que combina com o seu quadro específico, com seu histórico, com seus outros medicamentos, com seus efeitos colaterais toleráveis e com seu plano de vida. Essa é a discussão da consulta — não da bula.
+  </div>
+
+  <div class="pg-foot"><em>Elevar Saúde Mental</em><span>14 · Cap. 11</span></div>
+</div>
+
+<!-- ============ CAP 12 — URGÊNCIA ============ -->
+<div class="page">
+  <div class="pg-head"><svg viewBox="0 0 400 280" xmlns="http://www.w3.org/2000/svg"><path d="M200,128 C175,118 132,100 118,52 C162,66 193,96 200,128 Z" fill="#4D8A6B"/><path d="M200,128 C225,118 268,100 282,52 C238,66 207,96 200,128 Z" fill="#2D6A4F"/><circle cx="200" cy="38" r="13" fill="#B5743A"/></svg><span class="chap">Antidepressivos sem medo · Cap. 12</span></div>
+
+  <div class="chapter-num">12</div>
+  <h2 class="chapter">Quando procurar ajuda <em>urgente</em>.</h2>
+  <div class="lead-text">Independentemente de estar ou não em tratamento medicamentoso, há sinais que exigem atendimento imediato.</div>
+
+  <p>Se você — ou alguém próximo — apresentar qualquer um dos sinais abaixo, procure atendimento imediato. Esse e-book não é o caminho. A urgência tem porta de entrada própria.</p>
+
+  <ul>
+    <li>Pensamentos de se machucar ou se matar, com planejamento ou intenção</li>
+    <li>Comportamento autolesivo iminente ou em curso</li>
+    <li>Desorganização mental aguda, delírios, alucinações com perda de crítica</li>
+    <li>Agitação intensa ou comportamento de risco descontrolado</li>
+    <li>Sintomas físicos agudos após início de medicação (rigidez muscular, febre alta, confusão, sudorese intensa, taquicardia importante)</li>
+    <li>Reação alérgica (rash, inchaço, falta de ar)</li>
+  </ul>
+
+  <div class="callout red">
+    <strong>Em crise, procure imediatamente</strong>
+    <strong>CAPS</strong> mais próximo da sua residência<br>
+    <strong>SAMU — 192</strong> (rede pública de urgência)<br>
+    <strong>CVV — 188</strong> (Centro de Valorização da Vida, 24 horas, ligação ou chat em cvv.org.br)<br>
+    <strong>UPA ou pronto-socorro</strong> mais próximo<br>
+    Se houver pessoa próxima, peça ajuda para se deslocar. Se estiver sozinha e sem condições, ligue para o SAMU 192.
+  </div>
+
+  <p>Não há vergonha em buscar urgência. Há proteção. A sua vida vale.</p>
+
+  <h3>Para o dia seguinte da urgência</h3>
+  <p>Depois que a crise passou e você está em segurança, vale retomar acompanhamento regular. Crise é informação clínica — não é falha pessoal, não é fim do tratamento, não é começo de etiqueta vitalícia. É um momento que pede ajuste de plano e, frequentemente, mais rede de cuidado.</p>
+
+  <div class="pg-foot"><em>Elevar Saúde Mental</em><span>15 · Cap. 12</span></div>
+</div>
+
+<!-- ============ FECHAMENTO ============ -->
+<div class="page end">
+  <div class="inner">
+    <svg viewBox="0 0 400 280" xmlns="http://www.w3.org/2000/svg">
+      <path d="M200,128 C175,118 132,100 118,52 C162,66 193,96 200,128 Z" fill="#B7E4C7"/>
+      <path d="M200,128 C225,118 268,100 282,52 C238,66 207,96 200,128 Z" fill="#FFFFFF"/>
+      <circle cx="200" cy="38" r="13" fill="#E89B5A"/>
+      <text x="200" y="200" text-anchor="middle" font-family="Cormorant Garamond, serif" font-size="62" font-weight="500" letter-spacing="8" fill="#FFFFFF">ELEVAR</text>
+      <text x="200" y="238" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="14" letter-spacing="6" fill="#B7E4C7">SAÚDE MENTAL</text>
+    </svg>
+
+    <h2>Que esse guia tenha tirado um <em>pouco do medo</em>.</h2>
+    <p>Se chegou aqui, leu até o fim. Já vale.</p>
+    <p>Se a indicação vier — ou se já está em curso —, leva para a próxima consulta as perguntas que ficaram. Boa medicação se faz em dupla, com tempo, com escuta, com indicadores combinados, com paciência.</p>
+    <p>Se você quer agendar uma consulta na Elevar, encontra os critérios e o calendário em:</p>
+    <div class="url">elevarsaudemental.com.br</div>
+
+    <div class="small">
+      <strong style="color:var(--verde-suave)">Elevar Saúde Mental</strong> · Material educativo gratuito · Edição I<br>
+      Texto: equipe Elevar · Revisão clínica interna<br>
+      Este conteúdo é educativo e não substitui consulta médica. Nenhuma informação aqui se aplica diretamente ao seu caso individual. Em caso de crise, procure CAPS, SAMU 192 ou CVV 188.<br>
+      elevarsaudemental@gmail.com
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

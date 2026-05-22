@@ -1,0 +1,1823 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elevar Saúde Mental — vagas com critério social</title>
+<meta name="description" content="Plataforma de saúde mental online com número limitado de vagas mensais sob critério social. Cota institucional, cota aberta e atendimento particular.">
+<meta name="theme-color" content="#2D6A4F">
+
+<!-- Open Graph (WhatsApp, Facebook, LinkedIn) -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Elevar Saúde Mental">
+<meta property="og:description" content="Cuidado em saúde mental com critério, não com pressa. Vagas online limitadas com critério social.">
+<meta property="og:url" content="https://elevarsaudemental.com.br/">
+<meta property="og:image" content="https://elevarsaudemental.com.br/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Elevar Saúde Mental">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Elevar Saúde Mental">
+<meta name="twitter:description" content="Cuidado em saúde mental com critério, não com pressa.">
+<meta name="twitter:image" content="https://elevarsaudemental.com.br/og-image.png">
+
+<!-- Favicon SVG inline (sem dependência de arquivo) -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'><rect width='200' height='200' fill='%23FAF7F2'/><path d='M100,128 C75,118 32,100 18,52 C62,66 93,96 100,128 Z' fill='%234D8A6B'/><path d='M100,128 C125,118 168,100 182,52 C138,66 107,96 100,128 Z' fill='%232D6A4F'/><circle cx='100' cy='38' r='14' fill='%23B5743A'/></svg>">
+<link rel="alternate icon" type="image/jpeg" href="logo.jpeg">
+
+<link rel="apple-touch-icon" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'><rect width='200' height='200' fill='%23FAF7F2'/><path d='M100,128 C75,118 32,100 18,52 C62,66 93,96 100,128 Z' fill='%234D8A6B'/><path d='M100,128 C125,118 168,100 182,52 C138,66 107,96 100,128 Z' fill='%232D6A4F'/><circle cx='100' cy='38' r='14' fill='%23B5743A'/></svg>">
+<link rel="canonical" href="https://elevarsaudemental.com.br/">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<!-- Schema.org — MedicalOrganization (ajuda Google a entender o serviço) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalOrganization",
+  "name": "Elevar Saúde Mental",
+  "description": "Plataforma de teleconsulta em saúde mental com vagas limitadas mensais sob critério social.",
+  "url": "https://elevarsaudemental.com.br",
+  "logo": "https://elevarsaudemental.com.br/logo.jpeg",
+  "email": "elevarsaudemental@gmail.com",
+  "medicalSpecialty": "Mental Health",
+  "availableService": [
+    {"@type":"MedicalTherapy","name":"Teleconsulta em saúde mental"},
+    {"@type":"MedicalTherapy","name":"Avaliação médica em saúde mental"},
+    {"@type":"MedicalTherapy","name":"Acompanhamento medicamentoso"}
+  ],
+  "areaServed": {"@type":"Country","name":"Brasil"}
+}
+</script>
+
+<!-- Schema.org — FAQ (candidato a aparecer em destaque no Google) -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Como funciona a consulta online na Elevar?","acceptedAnswer":{"@type":"Answer","text":"A consulta é por videochamada, em horário previamente marcado. Você recebe o link por WhatsApp e e-mail antes do horário. Precisa de internet estável e, idealmente, um ambiente reservado."}},
+{"@type":"Question","name":"Vocês atendem por plano de saúde?","acceptedAnswer":{"@type":"Answer","text":"No momento, não. O pagamento é direto, sem intermediação de planos. No atendimento particular, emitimos recibo para reembolso quando o seu plano oferece essa possibilidade."}},
+{"@type":"Question","name":"Qual a duração das consultas e quantas vou precisar?","acceptedAnswer":{"@type":"Answer","text":"A primeira consulta dura de 50 a 60 minutos; as seguintes, de 30 a 40 minutos. Não há limite imposto de consultas — o seguimento dura o tempo que a situação clínica indicar, até a alta."}},
+{"@type":"Question","name":"Vocês emitem receita e atestado?","acceptedAnswer":{"@type":"Answer","text":"Sim. Receita digital com assinatura eletrônica, válida em todo o país, inclusive para medicamentos controlados conforme a legislação. Atestados e relatórios são emitidos quando clinicamente indicados."}},
+{"@type":"Question","name":"E se eu estiver em crise?","acceptedAnswer":{"@type":"Answer","text":"A Elevar é atendimento online programado e não substitui urgência. Em crise, procure imediatamente o CAPS mais próximo, ligue para o SAMU (192) ou para o CVV (188, 24h), ou vá a uma UPA."}},
+{"@type":"Question","name":"Atendem crianças e adolescentes?","acceptedAnswer":{"@type":"Answer","text":"No momento, atendemos apenas a partir de 18 anos. Para crianças e adolescentes, recomendamos serviços especializados em saúde mental infantojuvenil."}}
+]}
+</script>
+
+<!-- Analytics privacy-friendly: descomentar quando criar conta no Plausible
+<script defer data-domain="elevarsaudemental.com.br" src="https://plausible.io/js/script.js"></script>
+-->
+<style>
+  :root{
+    --verde:#2D6A4F; --verde-claro:#40916C; --verde-suave:#B7E4C7;
+    --creme:#FAF7F2; --creme-escuro:#EDE8DF; --terra:#7C5C3E;
+    --cinza:#3A3A3A; --cinza-claro:#777; --borda:#E5DFD3;
+    --branco:#FFFFFF; --alerta:#B45309; --erro:#B91C1C; --sucesso:#15803D;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+
+  /* Acessibilidade — foco visível */
+  *:focus-visible{outline:2px solid var(--verde-claro);outline-offset:2px;border-radius:2px}
+  button:focus-visible,a:focus-visible{outline-offset:3px}
+
+  /* Spinner */
+  .spinner{display:inline-block;width:14px;height:14px;border:2px solid rgba(255,255,255,.3);border-top-color:#fff;border-radius:50%;animation:spin .7s linear infinite;vertical-align:middle;margin-right:6px}
+  .spinner.dark{border-color:rgba(45,106,79,.25);border-top-color:var(--verde)}
+  @keyframes spin{to{transform:rotate(360deg)}}
+
+  /* Loading state em botão */
+  .btn.loading{opacity:.7;cursor:wait;pointer-events:none}
+  .btn.loading .spinner{display:inline-block}
+
+  /* Empty state mais rico */
+  .empty-rich{text-align:center;padding:60px 24px;color:#888}
+  .empty-rich .icon{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:56px;color:var(--verde-suave);line-height:1;margin-bottom:12px}
+  .empty-rich h4{font-family:'Cormorant Garamond',serif;font-weight:400;font-size:22px;color:var(--verde);margin-bottom:8px}
+  .empty-rich p{font-size:14px;max-width:380px;margin:0 auto;line-height:1.7}
+  body{font-family:'DM Sans',sans-serif;background:var(--creme);color:var(--cinza);line-height:1.6;font-weight:300}
+  .serif{font-family:'Cormorant Garamond',serif;font-weight:300}
+  em{font-style:italic}
+
+  /* HEADER */
+  header{position:sticky;top:0;z-index:50;background:rgba(250,247,242,0.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--borda)}
+  .nav{max-width:1200px;margin:0 auto;padding:16px 32px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+  .logo{background:none;border:none;cursor:pointer;padding:0;display:flex;align-items:center}
+  .logo .elv-svg{height:56px;width:auto;display:block}
+  @media(max-width:560px){.logo .elv-svg{height:44px}}
+  .elv-svg{display:block}
+  .elv-hero-logo{height:130px;margin:0 auto 28px}
+  .elv-footer-logo{height:90px;margin:0 auto 14px}
+  @media(max-width:560px){.elv-hero-logo{height:100px}.elv-footer-logo{height:72px}}
+  .nav-links{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+  .nav-btn{background:transparent;border:1px solid transparent;color:var(--cinza);font-family:'DM Sans',sans-serif;font-size:13px;letter-spacing:.5px;padding:8px 14px;border-radius:3px;cursor:pointer;transition:all .2s}
+  .nav-btn:hover{color:var(--verde);border-color:var(--borda)}
+  .nav-btn.active{color:var(--verde);border-color:var(--verde)}
+  .btn{display:inline-block;cursor:pointer;font-family:'DM Sans',sans-serif;font-weight:500;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;padding:13px 26px;border-radius:2px;text-decoration:none;border:none;transition:all .25s}
+  .btn:disabled{opacity:.4;cursor:not-allowed}
+  .btn-primary{background:var(--verde);color:var(--branco)}
+  .btn-primary:hover:not(:disabled){background:var(--verde-claro)}
+  .btn-ghost{background:transparent;color:var(--verde);border:1px solid var(--verde)}
+  .btn-ghost:hover{background:var(--verde);color:var(--branco)}
+  .btn-danger{background:var(--erro);color:#fff}
+  .btn-small{padding:9px 18px;font-size:11.5px}
+  .btn-light{background:var(--branco);color:var(--verde)}
+  .btn-outline-light{background:transparent;color:var(--branco);border:1px solid rgba(255,255,255,.5)}
+
+  /* VIEW SYSTEM */
+  .view{display:none;animation:fadeIn .25s ease}
+  .view.active{display:block}
+  @keyframes fadeIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+
+  /* HERO + LANDING */
+  .hero{background:var(--verde);color:var(--branco);padding:110px 32px 95px;position:relative;overflow:hidden;text-align:center}
+  .hero::before{content:'';position:absolute;top:-120px;right:-120px;width:480px;height:480px;border-radius:50%;background:rgba(64,145,108,.28)}
+  .hero::after{content:'';position:absolute;bottom:-100px;left:-100px;width:340px;height:340px;border-radius:50%;background:rgba(183,228,199,.10)}
+  .hero-inner{position:relative;z-index:1;max-width:820px;margin:0 auto}
+  .hero-label{font-size:11px;letter-spacing:4px;text-transform:uppercase;color:var(--verde-suave);margin-bottom:24px;font-weight:500}
+  .hero h1{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(42px,7vw,82px);line-height:1.05;letter-spacing:-1.5px;margin-bottom:28px}
+  .hero h1 em{color:var(--verde-suave)}
+  .hero-sub{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(18px,2.2vw,24px);color:rgba(255,255,255,.82);max-width:600px;margin:0 auto 40px}
+  .hero-divider{width:60px;height:1px;background:var(--verde-suave);margin:32px auto}
+  .hero-ctas{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:36px}
+  .btn-light:hover{background:var(--verde-suave)}
+  .btn-outline-light:hover{background:rgba(255,255,255,.1)}
+
+  section.block{padding:90px 32px}
+  .container{max-width:1100px;margin:0 auto}
+  .narrow{max-width:760px;margin:0 auto}
+  .label-sm{font-size:10px;letter-spacing:4px;text-transform:uppercase;color:var(--verde-claro);font-weight:500;margin-bottom:14px}
+  h2{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(34px,4.6vw,50px);line-height:1.15;color:var(--verde);margin-bottom:28px}
+  h2 em{font-style:italic}
+  h3{font-family:'Cormorant Garamond',serif;font-weight:400;font-size:24px;color:var(--verde);margin-bottom:12px}
+  p.lead{font-size:18px;line-height:1.8;color:#555;max-width:640px}
+  p{font-size:15.5px;color:#555}
+  .manifesto p{margin-bottom:18px;font-size:17px;line-height:1.9}
+  .como{background:var(--creme-escuro)}
+  .passos{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:32px;margin-top:48px}
+  .passo{background:var(--branco);padding:32px 28px;border-radius:4px;border-top:3px solid var(--verde-claro)}
+  .passo-num{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:48px;color:var(--verde-suave);line-height:1;margin-bottom:12px}
+  .passo h4{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:18px;color:var(--verde);margin-bottom:8px}
+  .passo p{font-size:14.5px;line-height:1.7}
+  .criterios .grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;margin-top:40px}
+  @media(max-width:760px){.criterios .grid{grid-template-columns:1fr}}
+  .crit-card{background:var(--branco);padding:36px;border-radius:4px;border:1px solid var(--borda)}
+  .crit-card ul{list-style:none;padding:0;margin-top:14px}
+  .crit-card li{padding:10px 0 10px 22px;position:relative;font-size:14.5px;color:#555;border-bottom:1px solid var(--borda)}
+  .crit-card li:last-child{border-bottom:none}
+  .crit-card li::before{content:'';position:absolute;left:0;top:18px;width:8px;height:8px;border-radius:50%;background:var(--verde-claro)}
+  /* E-BOOKS */
+  .ebooks{background:var(--creme-escuro)}
+  .ebooks h2{text-align:center}
+  .ebooks .label-sm{text-align:center}
+  .ebooks .intro{text-align:center;max-width:580px;margin:0 auto 42px;font-size:15.5px;color:#555}
+  .ebooks-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px;max-width:880px;margin:0 auto}
+  @media(max-width:720px){.ebooks-grid{grid-template-columns:1fr}}
+  .eb-card{background:var(--branco);border:1px solid var(--borda);border-radius:6px;padding:30px 28px;display:flex;flex-direction:column;gap:14px;transition:all .25s ease}
+  .eb-card:hover{transform:translateY(-3px);box-shadow:0 12px 32px rgba(45,106,79,.10)}
+  .eb-cover{background:var(--verde);color:#fff;border-radius:3px;padding:22px 22px 18px;position:relative;overflow:hidden;min-height:140px;display:flex;flex-direction:column;justify-content:flex-end}
+  .eb-cover::before{content:'';position:absolute;top:-60px;right:-60px;width:180px;height:180px;border-radius:50%;background:rgba(64,145,108,.32)}
+  .eb-cover .num{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:13px;color:var(--verde-suave);letter-spacing:2px;margin-bottom:6px;position:relative;z-index:1;text-transform:uppercase}
+  .eb-cover .t{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:22px;line-height:1.2;color:#fff;position:relative;z-index:1}
+  .eb-cover .t em{color:var(--verde-suave)}
+  .eb-meta{font-size:11px;color:var(--cinza-claro);letter-spacing:1.5px;text-transform:uppercase;font-weight:500}
+  .eb-desc{font-size:14px;color:#555;line-height:1.6;flex:1}
+  .eb-actions{display:flex;gap:8px;flex-wrap:wrap}
+
+  /* FAQ */
+  .faq{background:var(--creme)}
+  .faq-list{max-width:780px;margin:40px auto 0;border-top:1px solid var(--borda)}
+  .faq-item{border-bottom:1px solid var(--borda)}
+  .faq-q{width:100%;background:none;border:none;text-align:left;padding:22px 0;cursor:pointer;font-family:'Cormorant Garamond',serif;font-size:21px;font-weight:400;color:var(--verde);display:flex;justify-content:space-between;align-items:center;gap:18px;line-height:1.3}
+  .faq-q:hover{color:var(--verde-claro)}
+  .faq-q .ico{font-family:'DM Sans',sans-serif;font-size:22px;font-weight:300;color:var(--verde-claro);flex-shrink:0;transition:transform .25s ease;line-height:1}
+  .faq-item.open .faq-q .ico{transform:rotate(45deg)}
+  .faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease;font-size:15px;line-height:1.75;color:#555}
+  .faq-a-inner{padding:0 0 22px;max-width:680px}
+  .faq-a-inner p+p{margin-top:10px}
+  .faq-a strong{color:var(--verde);font-weight:500}
+
+  .vagas{background:var(--verde);color:var(--branco);text-align:center}
+  .vagas h2{color:var(--branco)} .vagas h2 em{color:var(--verde-suave)} .vagas .label-sm{color:var(--verde-suave)}
+  .vagas-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:32px;margin-top:48px}
+  .vaga-num{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:64px;color:var(--verde-suave);line-height:1}
+  .vaga-label{font-size:12px;letter-spacing:2px;text-transform:uppercase;margin-top:8px;color:rgba(255,255,255,.75)}
+
+  /* ============ PATIENT VIEW — CALENDÁRIO ============ */
+  .page-head{background:var(--creme-escuro);padding:48px 32px 32px;text-align:center;border-bottom:1px solid var(--borda)}
+  .page-head h1{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(32px,5vw,48px);color:var(--verde);margin-bottom:8px}
+  .page-head p{font-size:15px;max-width:560px;margin:0 auto}
+  .cal-wrap{max-width:1100px;margin:32px auto 80px;padding:0 32px}
+  .cal-bar{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-bottom:18px}
+  .cal-nav{display:flex;align-items:center;gap:10px}
+  .cal-nav button{background:var(--branco);border:1px solid var(--borda);width:36px;height:36px;border-radius:3px;cursor:pointer;color:var(--verde);font-size:16px}
+  .cal-nav button:hover{border-color:var(--verde-claro)}
+  .cal-week-label{font-family:'Cormorant Garamond',serif;font-size:22px;color:var(--verde);font-weight:400;min-width:240px;text-align:center}
+  .cal-filter{display:flex;gap:6px;flex-wrap:wrap}
+  .chip{padding:6px 14px;background:var(--branco);border:1px solid var(--borda);border-radius:20px;font-size:12px;cursor:pointer;transition:all .15s;color:var(--cinza)}
+  .chip:hover{border-color:var(--verde-claro)}
+  .chip.active{background:var(--verde);color:#fff;border-color:var(--verde)}
+  .cal-grid{background:var(--branco);border:1px solid var(--borda);border-radius:4px;overflow:hidden}
+  .cal-header{display:grid;grid-template-columns:repeat(7,1fr);background:var(--creme);border-bottom:1px solid var(--borda)}
+  .cal-header div{padding:12px 8px;text-align:center;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--verde);font-weight:500;border-right:1px solid var(--borda)}
+  .cal-header div:last-child{border-right:none}
+  .cal-header .day-num{display:block;font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--cinza);font-weight:400;letter-spacing:0;text-transform:none;margin-top:4px}
+  .cal-header .today .day-num{color:var(--verde);font-weight:600}
+  .cal-body{display:grid;grid-template-columns:repeat(7,1fr);min-height:400px}
+  .cal-col{border-right:1px solid var(--borda);padding:8px;display:flex;flex-direction:column;gap:6px}
+  .cal-col:last-child{border-right:none}
+  .cal-empty{font-size:11px;color:#bbb;text-align:center;padding:14px 4px;font-style:italic}
+  .slot{background:var(--creme);border:1px solid var(--borda);padding:8px 10px;border-radius:3px;cursor:pointer;transition:all .15s;text-align:left}
+  .slot:hover{background:var(--verde-suave);border-color:var(--verde-claro)}
+  .slot.booked{background:#F3EBE0;color:#999;cursor:not-allowed;border-color:#E0D5C2}
+  .slot.booked:hover{background:#F3EBE0;border-color:#E0D5C2}
+  .slot-time{font-weight:600;color:var(--verde);font-size:13px;display:block}
+  .slot.booked .slot-time{color:#999;text-decoration:line-through}
+  .slot-prof{font-size:11px;color:#666;margin-top:2px}
+  @media(max-width:780px){
+    .cal-body{grid-template-columns:1fr;min-height:auto}
+    .cal-header{display:none}
+    .cal-col{border-right:none;border-bottom:1px solid var(--borda);padding:14px}
+    .cal-col::before{content:attr(data-label);display:block;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--verde);font-weight:500;margin-bottom:10px}
+  }
+
+  /* ============ MODAL ============ */
+  .modal-backdrop{position:fixed;inset:0;background:rgba(45,106,79,.35);backdrop-filter:blur(4px);z-index:100;display:none;align-items:flex-start;justify-content:center;padding:40px 16px;overflow-y:auto}
+  .modal-backdrop.open{display:flex}
+  .modal{background:var(--branco);max-width:600px;width:100%;border-radius:6px;padding:36px;box-shadow:0 20px 60px rgba(0,0,0,.2)}
+  .modal h3{margin-bottom:6px}
+  .modal-close{float:right;background:none;border:none;font-size:22px;cursor:pointer;color:#999;line-height:1}
+  .modal-close:hover{color:var(--erro)}
+  .field{margin-bottom:18px}
+  .field label{display:block;font-size:12px;letter-spacing:1px;text-transform:uppercase;color:var(--verde);margin-bottom:7px;font-weight:500}
+  .field input,.field select,.field textarea{width:100%;padding:12px 14px;font-family:'DM Sans',sans-serif;border:1px solid var(--borda);border-radius:3px;background:var(--creme);font-size:14.5px;color:var(--cinza);transition:border .2s}
+  .field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--verde-claro);background:var(--branco)}
+  .field .hint{font-size:11.5px;color:var(--cinza-claro);margin-top:5px}
+  .check-list{display:flex;flex-direction:column;gap:10px;margin-bottom:6px}
+  .check-item{display:flex;align-items:flex-start;gap:11px;padding:13px;background:var(--creme);border:1px solid var(--borda);border-radius:3px;cursor:pointer;transition:all .15s;font-size:13.5px;color:#444}
+  .check-item:hover{border-color:var(--verde-claro)}
+  .check-item input{margin-top:2px;accent-color:var(--verde);width:16px;height:16px;flex-shrink:0}
+  .alert{background:#FEF3C7;border-left:3px solid var(--alerta);padding:14px 18px;margin:14px 0;border-radius:3px;font-size:13px;color:#7C5A1A;line-height:1.6}
+  .alert.green{background:#E8F5EE;border-left-color:var(--verde-claro);color:#1B5638}
+  .alert.red{background:#FEE2E2;border-left-color:var(--erro);color:#7F1D1D}
+  .alert strong{display:block;margin-bottom:3px}
+  .opt-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-bottom:12px}
+  @media(max-width:560px){.opt-grid{grid-template-columns:1fr}}
+  .opt-card{background:var(--creme);border:2px solid var(--borda);border-radius:4px;padding:14px;cursor:pointer;text-align:left;font-family:'DM Sans',sans-serif;transition:all .15s}
+  .opt-card:hover{border-color:var(--verde-claro)}
+  .opt-card.selected{border-color:var(--verde);background:var(--branco)}
+  .opt-card strong{display:block;color:var(--verde);font-size:13px;margin-bottom:3px;font-family:'Cormorant Garamond',serif;font-weight:600}
+  .opt-card span{font-size:11.5px;color:#666;line-height:1.4}
+
+  /* ============ AUTH / DASHBOARD ============ */
+  .auth-wrap{max-width:440px;margin:80px auto;padding:0 24px}
+  .auth-card{background:var(--branco);border:1px solid var(--borda);border-radius:6px;padding:40px 36px}
+  .auth-card h2{text-align:center;margin-bottom:8px;font-size:32px}
+  .auth-card .sub{text-align:center;font-size:14px;color:#666;margin-bottom:28px}
+  .auth-toggle{text-align:center;margin-top:18px;font-size:13px;color:#666}
+  .auth-toggle a{color:var(--verde);text-decoration:none;cursor:pointer;font-weight:500}
+  .auth-toggle a:hover{text-decoration:underline}
+
+  .dash-wrap{max-width:1200px;margin:0 auto;padding:32px}
+  .dash-head{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px;margin-bottom:24px;padding-bottom:20px;border-bottom:1px solid var(--borda)}
+  .dash-head h1{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:32px;color:var(--verde)}
+  .dash-head p{font-size:13.5px;color:#666;margin-top:2px}
+  .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin-bottom:28px}
+  .stat{background:var(--branco);border:1px solid var(--borda);border-radius:4px;padding:18px 20px;border-top:3px solid var(--verde-claro)}
+  .stat-num{font-family:'Cormorant Garamond',serif;font-size:34px;color:var(--verde);line-height:1}
+  .stat-label{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#666;margin-top:6px;font-weight:500}
+  .tabs{display:flex;gap:4px;border-bottom:1px solid var(--borda);margin-bottom:24px;flex-wrap:wrap}
+  .tab-btn{background:none;border:none;padding:12px 20px;font-family:'DM Sans',sans-serif;font-size:13px;letter-spacing:.8px;color:#666;cursor:pointer;border-bottom:2px solid transparent;text-transform:uppercase;font-weight:500}
+  .tab-btn:hover{color:var(--verde)}
+  .tab-btn.active{color:var(--verde);border-bottom-color:var(--verde)}
+  .tab-panel{display:none}
+  .tab-panel.active{display:block}
+  .card{background:var(--branco);border:1px solid var(--borda);border-radius:4px;padding:24px;margin-bottom:18px}
+  .card h3{font-size:20px;margin-bottom:14px}
+  .row{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;align-items:end}
+  .table{width:100%;border-collapse:collapse;font-size:13.5px}
+  .table th{text-align:left;padding:10px 12px;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--verde);font-weight:500;border-bottom:2px solid var(--borda);background:var(--creme)}
+  .table td{padding:12px;border-bottom:1px solid var(--borda);color:#444}
+  .table tr:hover td{background:var(--creme)}
+  .badge{display:inline-block;padding:3px 8px;border-radius:2px;font-size:10.5px;letter-spacing:.6px;text-transform:uppercase;font-weight:500}
+  .badge-green{background:var(--verde-suave);color:var(--verde)}
+  .badge-amber{background:#FEF3C7;color:#92400E}
+  .badge-red{background:#FEE2E2;color:#991B1B}
+  .badge-terra{background:#F3EBE0;color:var(--terra)}
+  .empty{text-align:center;padding:40px 20px;color:#999;font-style:italic;font-family:'Cormorant Garamond',serif;font-size:18px}
+  .recur-days{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}
+  .recur-days label{flex:1;min-width:60px;text-align:center;padding:8px 4px;background:var(--creme);border:1px solid var(--borda);border-radius:3px;font-size:12px;cursor:pointer}
+  .recur-days input{display:none}
+  .recur-days input:checked+span{color:var(--verde);font-weight:600}
+  .recur-days label:has(input:checked){background:var(--verde-suave);border-color:var(--verde)}
+
+  .toast{position:fixed;bottom:24px;right:24px;background:var(--verde);color:#fff;padding:14px 22px;border-radius:4px;box-shadow:0 6px 24px rgba(0,0,0,.18);font-size:14px;z-index:200;animation:slideIn .3s ease}
+  .toast.error{background:var(--erro)}
+  @keyframes slideIn{from{transform:translateX(100%);opacity:0}to{transform:translateX(0);opacity:1}}
+
+  .err-msg{color:var(--erro);font-size:13px;margin-top:10px;text-align:center}
+
+  footer{background:var(--verde);color:rgba(255,255,255,.75);padding:60px 32px 30px;text-align:center}
+  footer .logo{color:var(--branco);font-size:24px;margin-bottom:16px;display:inline-block;cursor:default}
+  footer p{color:rgba(255,255,255,.6);font-size:13px;max-width:520px;margin:0 auto 12px}
+  footer .small{font-size:11px;letter-spacing:1px;color:rgba(255,255,255,.4);margin-top:30px;padding-top:24px;border-top:1px solid rgba(255,255,255,.12)}
+
+  .config-banner{background:#FEF3C7;border-bottom:1px solid var(--alerta);padding:10px 16px;text-align:center;font-size:13px;color:#7C5A1A}
+  .config-banner code{background:#fff;padding:2px 6px;border-radius:2px;font-size:12px}
+
+  /* COOKIE BANNER */
+  .cookie-bar{position:fixed;bottom:18px;left:18px;right:18px;max-width:560px;margin:0 auto;background:var(--verde);color:#fff;padding:18px 22px;border-radius:4px;box-shadow:0 8px 32px rgba(0,0,0,.22);z-index:120;display:none;align-items:center;gap:18px;font-size:13px;line-height:1.5}
+  .cookie-bar.show{display:flex}
+  .cookie-bar p{color:rgba(255,255,255,.92);margin:0;flex:1}
+  .cookie-bar a{color:var(--verde-suave);text-decoration:underline}
+  .cookie-bar button{background:#fff;color:var(--verde);border:none;padding:9px 18px;font-size:12px;font-weight:500;letter-spacing:1px;text-transform:uppercase;border-radius:2px;cursor:pointer;font-family:'DM Sans',sans-serif;white-space:nowrap}
+  .cookie-bar button:hover{background:var(--verde-suave)}
+  @media(max-width:560px){.cookie-bar{flex-direction:column;align-items:stretch;text-align:center}}
+
+  footer .legal-links{margin-top:18px;display:flex;justify-content:center;gap:18px;flex-wrap:wrap}
+  footer .legal-links a{color:rgba(255,255,255,.7);text-decoration:none;font-size:11.5px;letter-spacing:.5px;border-bottom:1px dotted rgba(183,228,199,.4)}
+  footer .legal-links a:hover{color:var(--verde-suave)}
+</style>
+</head>
+<body>
+
+<div id="configBanner" class="config-banner" style="display:none">
+  ⚠ Backend não configurado. Preencha <code>SUPABASE_URL</code> e <code>SUPABASE_KEY</code> no topo do &lt;script&gt; e rode o SQL do final do arquivo no seu projeto Supabase.
+</div>
+
+<header>
+  <nav class="nav">
+    <button class="logo" onclick="goView('landing')" aria-label="Elevar Saúde Mental — início">
+      <svg class="elv-svg" viewBox="0 0 400 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Elevar Saúde Mental">
+        <path d="M200,128 C175,118 132,100 118,52 C162,66 193,96 200,128 Z" fill="#4D8A6B"/>
+        <path d="M200,128 C225,118 268,100 282,52 C238,66 207,96 200,128 Z" fill="#2D6A4F"/>
+        <circle cx="200" cy="38" r="13" fill="#B5743A"/>
+        <text x="200" y="200" text-anchor="middle" font-family="Cormorant Garamond, serif" font-size="62" font-weight="500" letter-spacing="8" fill="#1F4D38">ELEVAR</text>
+        <text x="200" y="238" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="14" letter-spacing="6" fill="#5C9176">SAÚDE MENTAL</text>
+      </svg>
+    </button>
+    <div class="nav-links">
+      <button class="nav-btn" data-view="landing" onclick="goView('landing')">Início</button>
+      <a class="nav-btn" href="sobre.html">Sobre</a>
+      <a class="nav-btn" href="blog.html">Blog</a>
+      <a class="nav-btn" href="materiais.html">Materiais</a>
+      <button class="nav-btn" data-view="patient" onclick="goView('patient')">Agendar</button>
+      <button class="nav-btn" data-view="prof" onclick="goProf()">Profissionais</button>
+    </div>
+  </nav>
+</header>
+
+<!-- ====================================== LANDING ====================================== -->
+<main id="view-landing" class="view active">
+  <section class="hero">
+    <div class="hero-inner">
+      <svg class="elv-svg elv-hero-logo" viewBox="0 0 400 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Elevar Saúde Mental">
+        <path d="M200,128 C175,118 132,100 118,52 C162,66 193,96 200,128 Z" fill="#B7E4C7"/>
+        <path d="M200,128 C225,118 268,100 282,52 C238,66 207,96 200,128 Z" fill="#FFFFFF"/>
+        <circle cx="200" cy="38" r="13" fill="#E89B5A"/>
+        <text x="200" y="200" text-anchor="middle" font-family="Cormorant Garamond, serif" font-size="62" font-weight="500" letter-spacing="8" fill="#FFFFFF">ELEVAR</text>
+        <text x="200" y="238" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="14" letter-spacing="6" fill="#B7E4C7">SAÚDE MENTAL</text>
+      </svg>
+      <div class="hero-label">Atendimento médico em saúde mental · Online</div>
+      <h1>Cuidado em saúde mental <em>com critério</em>, não com pressa.</h1>
+      <div class="hero-divider"></div>
+      <p class="hero-sub">Consultas médicas em saúde mental — avaliação, diagnóstico e tratamento medicamentoso quando indicado. Vagas online limitadas, com critério social.</p>
+      <div class="hero-ctas">
+        <button class="btn btn-light" onclick="goView('patient')">Solicitar vaga</button>
+        <a href="#manifesto" class="btn btn-outline-light">Conhecer a proposta</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="manifesto" class="block manifesto">
+    <div class="narrow">
+      <div class="label-sm">Manifesto</div>
+      <h2>Cuidar bem <em>de poucos</em>, antes de cuidar mal de muitos.</h2>
+      <p>A Elevar nasceu da constatação de uma fratura no acesso à saúde mental: de um lado, o serviço público sobrecarregado; do outro, a clínica privada inacessível à maior parte das pessoas que precisam dela.</p>
+      <p>Não somos uma plataforma de massa. Não somos uma promessa de cura rápida. Somos um número pequeno de vagas mensais, oferecidas com seriedade clínica e critério social, por um grupo de médicos em formação avançada.</p>
+      <p>Trabalhamos em três vias de acesso — uma cota institucional, encaminhada por parceiros que conhecem a realidade da pessoa; uma cota aberta, com auto-declaração transparente; e o atendimento particular, em valor de mercado, para quem pode contribuir integralmente — de modo que cada vaga chegue a quem ela foi pensada.</p>
+      <p>Aqui, fila pequena é proposta, não defeito.</p>
+    </div>
+  </section>
+
+  <section class="block como">
+    <div class="container">
+      <div class="narrow" style="text-align:center;margin-bottom:20px">
+        <div class="label-sm">Como funciona</div>
+        <h2>Um caminho <em>curto e claro</em>, do primeiro contato à consulta.</h2>
+      </div>
+      <div class="passos">
+        <div class="passo"><div class="passo-num">01</div><h4>Escolha o horário</h4><p>Veja os horários disponíveis no calendário e selecione o que melhor cabe na sua semana.</p></div>
+        <div class="passo"><div class="passo-num">02</div><h4>Identifique sua via</h4><p>Institucional (com código de parceiro), aberta (auto-declaração) ou particular (sem cotas).</p></div>
+        <div class="passo"><div class="passo-num">03</div><h4>Preencha os dados</h4><p>Nome, contato e uma breve descrição da queixa para a equipe se preparar.</p></div>
+        <div class="passo"><div class="passo-num">04</div><h4>Receba a confirmação</h4><p>Confirmação por WhatsApp com link da consulta online e orientações.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block criterios">
+    <div class="container">
+      <div class="narrow" style="text-align:center;margin-bottom:20px">
+        <div class="label-sm">Quem pode acessar</div>
+        <h2>Critérios <em>públicos</em> e transparentes.</h2>
+        <p class="lead" style="margin:0 auto">A vaga social existe para quem encontra barreira real de acesso. Acreditamos na honestidade de quem se candidata.</p>
+      </div>
+      <div class="grid">
+        <div class="crit-card">
+          <h3>Cota institucional</h3>
+          <p style="font-size:14px">Encaminhamento de um parceiro que conhece a pessoa.</p>
+          <ul>
+            <li>Paróquias com pastorais sociais ativas</li>
+            <li>Pastoral da Saúde (CNBB)</li>
+            <li>CRAS, CREAS e equipamentos municipais</li>
+            <li>ONGs e projetos sociais de saúde mental</li>
+            <li>Escolas e universidades públicas</li>
+          </ul>
+        </div>
+        <div class="crit-card">
+          <h3>Cota aberta</h3>
+          <p style="font-size:14px">Auto-declaração de pelo menos um critério.</p>
+          <ul>
+            <li>Renda familiar bruta até 3 salários mínimos</li>
+            <li>Recebe Bolsa Família ou BPC</li>
+            <li>Não possui plano de saúde</li>
+            <li>Estudante de instituição pública sem condições financeiras</li>
+            <li>Em situação de desemprego há mais de 6 meses</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block faq">
+    <div class="container">
+      <div class="narrow" style="text-align:center">
+        <div class="label-sm">Perguntas frequentes</div>
+        <h2>Antes de <em>agendar</em>, vale saber.</h2>
+      </div>
+      <div class="faq-list" id="faqList">
+
+        <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Como funciona a consulta online? <span class="ico">+</span></button>
+          <div class="faq-a"><div class="faq-a-inner"><p>A consulta é por videochamada, em horário previamente marcado. Você recebe o link de acesso por WhatsApp e e-mail antes do horário. Precisa de internet estável e, idealmente, de um ambiente reservado para falar com tranquilidade.</p></div></div>
+        </div>
+
+        <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Quanto custa a consulta? <span class="ico">+</span></button>
+          <div class="faq-a"><div class="faq-a-inner"><p>O valor é informado pela equipe na confirmação por WhatsApp, antes de qualquer cobrança. Há <strong>valor social fixo</strong> para as cotas institucional e aberta, e <strong>valor de mercado</strong> para o atendimento particular. Cada consulta é cobrada individualmente.</p></div></div>
+        </div>
+
+        <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Vocês atendem por plano de saúde? <span class="ico">+</span></button>
+          <div class="faq-a"><div class="faq-a-inner"><p>No momento, não. Em todas as vias o pagamento é direto, sem intermediação de planos. No atendimento particular, emitimos recibo para reembolso quando o seu plano oferece essa possibilidade.</p></div></div>
+        </div>
+
+        <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Como sei se me encaixo na cota social? <span class="ico">+</span></button>
+          <div class="faq-a"><div class="faq-a-inner"><p>Os critérios estão na seção <strong>Critérios</strong> deste site, públicos e objetivos. A auto-declaração é feita no próprio agendamento — não pedimos comprovação documental. Confiamos na honestidade de quem se candidata para que a vaga chegue a quem ela foi pensada.</p></div></div>
+        </div>
+
+        <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">E se eu não me encaixo na cota social? <span class="ico">+</span></button>
+          <div class="faq-a"><div class="faq-a-inner"><p>Você pode acessar o <strong>atendimento particular</strong> aqui mesmo no site, sem cotas e sem fila. Escolher essa via é também uma forma de cuidar — libera as vagas sociais para quem realmente não tem condições de pagar valor de mercado.</p></div></div>
+        </div>
+
+        <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Qual a duração das consultas? Quantas vou precisar? <span class="ico">+</span></button>
+          <div class="faq-a"><div class="faq-a-inner"><p>A primeira consulta tem entre <strong>50 e 60 minutos</strong>. As consultas subsequentes, entre <strong>30 e 40 minutos</strong>. O número total de consultas é o que sua situação clínica indicar — não há limite imposto pelo modelo. O seguimento continua pelo tempo necessário até a alta.</p></div></div>
+        </div>
+
+        <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Vocês emitem receita e atestado? <span class="ico">+</span></button>
+          <div class="faq-a"><div class="faq-a-inner"><p>Sim. Receita digital por <strong>plataforma segura com assinatura eletrônica e criptografia</strong>, válida em todo o país, inclusive para medicamentos controlados, conforme a legislação vigente. Atestados, declarações de comparecimento e relatórios médicos são emitidos quando clinicamente indicados.</p></div></div>
+        </div>
+
+        <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">E se eu estiver em crise? <span class="ico">+</span></button>
+          <div class="faq-a"><div class="faq-a-inner"><p>A Elevar é um serviço de atendimento online programado e <strong>não substitui atendimento de urgência</strong>. Se você está em crise — ideação suicida ativa, surto, sofrimento que não pode esperar — procure imediatamente:</p><p>• <strong>CAPS</strong> mais próximo (busca: caps.gov.br)<br>• <strong>SAMU 192</strong><br>• <strong>CVV 188</strong> (24h, ligação ou chat em cvv.org.br)<br>• <strong>UPA</strong> ou pronto-socorro mais próximo</p></div></div>
+        </div>
+
+        <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Atendem crianças e adolescentes? <span class="ico">+</span></button>
+          <div class="faq-a"><div class="faq-a-inner"><p>No momento, atendemos apenas a partir de <strong>18 anos</strong>. Para crianças e adolescentes, recomendamos a busca por serviços especializados em saúde mental infantojuvenil — sua UBS ou CAPSij pode orientar.</p></div></div>
+        </div>
+
+        <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Como faço para cancelar ou remarcar? <span class="ico">+</span></button>
+          <div class="faq-a"><div class="faq-a-inner"><p>Avise a equipe pelo WhatsApp com pelo menos <strong>24 horas de antecedência</strong>. Cancelamentos com menos de 24h e faltas sem aviso comprometem a vaga e, na cota social, podem inviabilizar reagendamento — exatamente porque a vaga não foi oferecida a outra pessoa que poderia ter ocupado.</p></div></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="block ebooks">
+    <div class="container">
+      <div class="label-sm">Materiais gratuitos</div>
+      <h2>Dois <em>e-books</em> para tirar dúvidas comuns.</h2>
+      <p class="intro">Conteúdo educativo escrito pela equipe Elevar. Receba os dois no seu e-mail para ler quando precisar — sem custo, sem spam.</p>
+      <div class="ebooks-grid">
+        <div class="eb-card">
+          <div class="eb-cover">
+            <div class="num">Edição I</div>
+            <div class="t">Antidepressivos <em>sem medo</em>.</div>
+          </div>
+          <div class="eb-meta">Guia · 16 páginas</div>
+          <div class="eb-desc">O que são, como funcionam, quanto tempo demoram a fazer efeito, os seis medos mais comuns e o que esperar dos primeiros 14 dias. Linguagem clínica acessível, sem prometer cura.</div>
+          <div class="eb-actions"><button class="btn btn-primary btn-small" onclick="openEbookModal()">Receber por e-mail</button></div>
+        </div>
+        <div class="eb-card">
+          <div class="eb-cover">
+            <div class="num">Edição II</div>
+            <div class="t"><em>30 perguntas</em> antes de começar tratamento.</div>
+          </div>
+          <div class="eb-meta">Guia · 18 páginas</div>
+          <div class="eb-desc">Trinta perguntas em seis blocos para levar à consulta — sobre o profissional, o diagnóstico, a medicação, o tratamento, os efeitos, o seguimento. Cuidar é também perguntar.</div>
+          <div class="eb-actions"><button class="btn btn-primary btn-small" onclick="openEbookModal()">Receber por e-mail</button></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block vagas">
+    <div class="container">
+      <div class="label-sm">Vagas do mês corrente</div>
+      <h2 id="vagasMesLabel">Maio · <em>2026</em></h2>
+      <div class="vagas-grid">
+        <div><div class="vaga-num" id="vagasTotal">—</div><div class="vaga-label">Vagas totais</div></div>
+        <div><div class="vaga-num" id="vagasInst">—</div><div class="vaga-label">Cota institucional</div></div>
+        <div><div class="vaga-num" id="vagasAbert">—</div><div class="vaga-label">Cota aberta</div></div>
+        <div><div class="vaga-num" id="vagasDisp" style="color:#fff">—</div><div class="vaga-label">Disponíveis</div></div>
+      </div>
+      <div style="margin-top:48px"><button class="btn btn-light" onclick="goView('patient')">Ver calendário</button></div>
+    </div>
+  </section>
+
+  <section class="block" style="background:var(--verde);color:var(--branco);text-align:center;padding:90px 32px">
+    <div class="container" style="max-width:640px">
+      <h2 class="serif" style="color:var(--branco);font-size:clamp(32px,5vw,46px);font-weight:300;margin-bottom:18px">Pronto para <em style="color:var(--verde-suave)">começar</em>?</h2>
+      <p style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:20px;color:rgba(255,255,255,.85);margin-bottom:34px">Veja os critérios, escolha sua via e agende um horário.</p>
+      <button class="btn btn-light" onclick="goView('patient')">Solicitar vaga</button>
+    </div>
+  </section>
+</main>
+
+<!-- ====================================== PATIENT (CALENDÁRIO) ====================================== -->
+<main id="view-patient" class="view">
+  <div class="page-head">
+    <h1 class="serif">Agendar consulta</h1>
+    <p>Selecione um horário disponível no calendário abaixo. Você pode filtrar por profissional.</p>
+  </div>
+  <div class="cal-wrap">
+    <div class="cal-bar">
+      <div class="cal-nav">
+        <button onclick="weekShift(-1)" title="Semana anterior">‹</button>
+        <button onclick="weekShift(0)" title="Hoje" style="width:auto;padding:0 12px;font-size:12px">Hoje</button>
+        <button onclick="weekShift(1)" title="Próxima semana">›</button>
+        <span class="cal-week-label" id="calWeekLabel"></span>
+      </div>
+      <div class="cal-filter" id="profChips"></div>
+    </div>
+    <div class="cal-grid">
+      <div class="cal-header" id="calHeader"></div>
+      <div class="cal-body" id="calBody"></div>
+    </div>
+    <p style="text-align:center;margin-top:24px;font-size:13px;color:#888">
+      Não encontrou horário? Escreva para <a href="mailto:elevarsaudemental@gmail.com" style="color:var(--verde)">elevarsaudemental@gmail.com</a> ou aguarde a abertura de novas vagas no próximo mês.
+    </p>
+  </div>
+</main>
+
+<!-- ====================================== PROFESSIONAL LOGIN ====================================== -->
+<main id="view-prof-login" class="view">
+  <div class="auth-wrap">
+    <div class="auth-card" id="loginCard">
+      <h2 class="serif">Acesso profissional</h2>
+      <p class="sub">Entre com suas credenciais.</p>
+      <div class="field"><label>E-mail</label><input type="email" id="loginEmail" autocomplete="email"></div>
+      <div class="field"><label>Senha</label><input type="password" id="loginPassword" autocomplete="current-password"></div>
+      <button class="btn btn-primary" style="width:100%" onclick="doLogin()">Entrar</button>
+      <div class="err-msg" id="loginError" style="display:none"></div>
+      <div class="auth-toggle" style="margin-top:14px">
+        <a onclick="toggleAuth('forgot')">Esqueci minha senha</a>
+        <span style="color:#ccc;margin:0 8px">·</span>
+        Primeiro acesso? <a onclick="toggleAuth('register')">Criar conta</a>
+      </div>
+    </div>
+    <div class="auth-card" id="forgotCard" style="display:none">
+      <h2 class="serif">Recuperar senha</h2>
+      <p class="sub">Informe seu e-mail. Enviaremos um link de redefinição.</p>
+      <div class="field"><label>E-mail</label><input type="email" id="forgotEmail" autocomplete="email"></div>
+      <button class="btn btn-primary" style="width:100%" onclick="doForgot()">Enviar link</button>
+      <div class="err-msg" id="forgotError" style="display:none"></div>
+      <div id="forgotSuccess" style="display:none;background:#E8F5EE;border-left:3px solid var(--verde);padding:14px;border-radius:3px;margin-top:14px;font-size:13px;color:#1B5638">Se houver conta com esse e-mail, enviamos um link de redefinição. Confira sua caixa de entrada (e o spam).</div>
+      <div class="auth-toggle">Lembrou? <a onclick="toggleAuth('login')">Voltar ao login</a></div>
+    </div>
+
+    <div class="auth-card" id="registerCard" style="display:none">
+      <h2 class="serif">Criar conta</h2>
+      <p class="sub">Apenas profissionais autorizados pela equipe Elevar.</p>
+      <div class="field"><label>Nome completo</label><input type="text" id="regName"></div>
+      <div class="field"><label>E-mail profissional</label><input type="email" id="regEmail" autocomplete="email"></div>
+      <div class="field"><label>CRM</label><input type="text" id="regCrm" placeholder="Ex.: CRM/CE 12345"></div>
+      <div class="field"><label>Senha</label><input type="password" id="regPassword" placeholder="Mínimo 8 caracteres" autocomplete="new-password"></div>
+      <button class="btn btn-primary" style="width:100%" onclick="doRegister()">Criar conta</button>
+      <div class="err-msg" id="registerError" style="display:none"></div>
+      <div class="auth-toggle">Já tem conta? <a onclick="toggleAuth('login')">Entrar</a></div>
+    </div>
+  </div>
+</main>
+
+<!-- ====================================== PROFESSIONAL DASHBOARD ====================================== -->
+<main id="view-prof-dash" class="view">
+  <div class="dash-wrap">
+    <div class="dash-head">
+      <div>
+        <h1 id="dashWelcome">Bem-vindo(a)</h1>
+        <p id="dashSubtitle">Gerencie seus horários e agendamentos</p>
+      </div>
+      <button class="btn btn-ghost btn-small" onclick="doLogout()">Sair</button>
+    </div>
+
+    <div class="stats" id="dashStats"></div>
+
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="slots" onclick="switchTab('slots',this)">Meus horários</button>
+      <button class="tab-btn" data-tab="bookings" onclick="switchTab('bookings',this)">Agendamentos</button>
+      <button class="tab-btn" data-tab="history" onclick="switchTab('history',this)">Histórico</button>
+      <button class="tab-btn" id="tabRedeBtn" data-tab="rede" onclick="switchTab('rede',this); loadRede()" style="display:none">Rede de psicólogos</button>
+    </div>
+
+    <div id="tab-slots" class="tab-panel active">
+      <div class="card">
+        <h3 class="serif">Abrir novo horário</h3>
+        <div class="row">
+          <div class="field" style="margin:0"><label>Data</label><input type="date" id="newSlotDate"></div>
+          <div class="field" style="margin:0"><label>Hora</label><input type="time" id="newSlotTime" value="09:00"></div>
+          <div class="field" style="margin:0"><label>Duração</label>
+            <select id="newSlotDur"><option value="30">30 min</option><option value="50" selected>50 min</option><option value="60">60 min</option></select>
+          </div>
+          <button class="btn btn-primary btn-small" onclick="addSlot()">Adicionar</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3 class="serif">Horários recorrentes</h3>
+        <p style="font-size:13.5px;margin-bottom:14px">Crie horários repetidos para várias semanas.</p>
+        <div class="row">
+          <div class="field" style="margin:0"><label>Hora</label><input type="time" id="recurTime" value="09:00"></div>
+          <div class="field" style="margin:0"><label>Duração</label>
+            <select id="recurDur"><option value="30">30 min</option><option value="50" selected>50 min</option><option value="60">60 min</option></select>
+          </div>
+          <div class="field" style="margin:0"><label>Semanas</label>
+            <select id="recurWeeks"><option value="2">2</option><option value="4" selected>4</option><option value="8">8</option><option value="12">12</option></select>
+          </div>
+        </div>
+        <div class="field" style="margin-top:14px"><label>Dias da semana</label>
+          <div class="recur-days">
+            <label><input type="checkbox" value="1"><span>Seg</span></label>
+            <label><input type="checkbox" value="2"><span>Ter</span></label>
+            <label><input type="checkbox" value="3"><span>Qua</span></label>
+            <label><input type="checkbox" value="4"><span>Qui</span></label>
+            <label><input type="checkbox" value="5"><span>Sex</span></label>
+            <label><input type="checkbox" value="6"><span>Sáb</span></label>
+            <label><input type="checkbox" value="0"><span>Dom</span></label>
+          </div>
+        </div>
+        <button class="btn btn-primary btn-small" onclick="addRecurring()">Criar recorrentes</button>
+      </div>
+
+      <div class="card">
+        <h3 class="serif">Meus horários futuros</h3>
+        <div id="slotsTable"></div>
+      </div>
+    </div>
+
+    <div id="tab-bookings" class="tab-panel">
+      <div class="card">
+        <h3 class="serif">Agendamentos futuros</h3>
+        <div id="bookingsList"></div>
+      </div>
+    </div>
+
+    <div id="tab-history" class="tab-panel">
+      <div class="card">
+        <h3 class="serif">Consultas passadas</h3>
+        <div id="historyList"></div>
+      </div>
+    </div>
+
+    <div id="tab-rede" class="tab-panel">
+      <div class="card">
+        <h3 class="serif">Rede de psicólogos parceiros</h3>
+        <p style="font-size:13px;color:#666;margin-bottom:16px">Filtre por abordagem, modalidade e valor para encontrar quem indicar ao paciente. A escolha final é sempre do paciente.</p>
+        <div class="row" style="gap:10px;margin-bottom:8px">
+          <div class="field" style="margin:0;flex:1;min-width:160px"><label>Busca (nome, abordagem)</label><input type="text" class="form-input" id="fBusca" placeholder="Ex.: TCC, trauma, nome…" oninput="renderRede()"></div>
+          <div class="field" style="margin:0"><label>Modalidade</label>
+            <select class="form-input" id="fModalidade" onchange="renderRede()">
+              <option value="">Todas</option><option value="online">Online</option><option value="presencial">Presencial</option><option value="ambos">Ambos</option>
+            </select>
+          </div>
+          <div class="field" style="margin:0"><label>Valor</label>
+            <select class="form-input" id="fSocial" onchange="renderRede()">
+              <option value="">Qualquer</option><option value="sim">Faz social/acessível</option><option value="as_vezes">Social em alguns casos</option>
+            </select>
+          </div>
+          <div class="field" style="margin:0"><label>Status</label>
+            <select class="form-input" id="fStatus" onchange="renderRede()">
+              <option value="ativo">Só ativos</option><option value="">Todos</option><option value="pendente">Pendentes</option>
+            </select>
+          </div>
+        </div>
+        <div id="redeResultado"></div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- ====================================== MODAL DE AGENDAMENTO ====================================== -->
+<div class="modal-backdrop" id="bookModal">
+  <div class="modal">
+    <button class="modal-close" onclick="closeBookModal()">×</button>
+    <div id="bookForm">
+    <h3 class="serif">Confirmar agendamento</h3>
+    <p style="font-size:14px;margin-bottom:18px;color:#666" id="bookSummary"></p>
+
+    <div class="field"><label>Nome completo</label><input type="text" id="pNome"></div>
+    <div class="field"><label>WhatsApp</label><input type="tel" id="pTel" placeholder="(00) 00000-0000"></div>
+    <div class="field"><label>E-mail</label><input type="email" id="pEmail"></div>
+
+    <div class="field">
+      <label>Via de acesso</label>
+      <div class="opt-grid">
+        <button type="button" class="opt-card" data-via="institucional"><strong>Institucional</strong><span>Tem código de parceiro</span></button>
+        <button type="button" class="opt-card" data-via="aberta"><strong>Cota aberta</strong><span>Auto-declaração</span></button>
+        <button type="button" class="opt-card" data-via="particular"><strong>Particular</strong><span>Valor de mercado</span></button>
+      </div>
+    </div>
+
+    <div id="precoBox" style="display:none;background:linear-gradient(#E8F5EE,#E8F5EE);border:1px solid var(--verde-suave);border-radius:4px;padding:12px 16px;margin-bottom:14px">
+      <div style="font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--verde);font-weight:600;margin-bottom:2px">Valor da consulta</div>
+      <div id="precoValor" style="font-family:'Cormorant Garamond',serif;font-size:22px;color:var(--verde);font-weight:600"></div>
+      <div id="precoNota" style="font-size:12px;color:#555;margin-top:2px"></div>
+    </div>
+
+    <div id="viaInst" style="display:none">
+      <div class="field"><label>Parceiro</label>
+        <select id="parceiroInst"><option value="">Selecione…</option><option>Paróquia / Pastoral local</option><option>Pastoral da Saúde (CNBB)</option><option>CRAS / CREAS</option><option>ONG / Projeto social</option><option>Escola / Universidade pública</option><option>Outro</option></select>
+      </div>
+      <div class="field"><label>Código do encaminhamento</label><input type="text" id="codigoInst" placeholder="Ex.: ELV-2026-0042"></div>
+    </div>
+
+    <div id="viaAberta" style="display:none">
+      <p style="font-size:13.5px;margin-bottom:10px">Marque pelo menos um critério que se aplica a você:</p>
+      <div class="check-list">
+        <label class="check-item"><input type="checkbox" class="crit-chk"><span>Renda familiar bruta até 3 salários mínimos</span></label>
+        <label class="check-item"><input type="checkbox" class="crit-chk"><span>Beneficiário do Bolsa Família ou BPC</span></label>
+        <label class="check-item"><input type="checkbox" class="crit-chk"><span>Não possuo plano de saúde</span></label>
+        <label class="check-item"><input type="checkbox" class="crit-chk"><span>Estudante de instituição pública sem condições</span></label>
+        <label class="check-item"><input type="checkbox" class="crit-chk"><span>Desemprego há mais de 6 meses</span></label>
+      </div>
+    </div>
+
+    <div id="viaParticular" style="display:none">
+      <div class="alert" style="background:#F3EBE0;border-left-color:var(--terra);color:#5C4530">
+        Atendimento particular, sem cotas. O pagamento é combinado com a equipe na confirmação por WhatsApp.
+      </div>
+    </div>
+
+    <div class="field"><label>Queixa principal (opcional)</label><textarea id="pQueixa" rows="2" placeholder="Em uma frase. Ajuda a equipe a se preparar."></textarea></div>
+
+    <div class="field">
+      <label>Você foi encaminhado(a) por outro profissional?</label>
+      <div class="opt-grid" style="grid-template-columns:1fr 1fr">
+        <button type="button" class="opt-card" data-encpsi="sim"><strong>Sim</strong></button>
+        <button type="button" class="opt-card" data-encpsi="nao"><strong>Não</strong></button>
+      </div>
+    </div>
+    <div class="field" id="psicoNomeWrap" style="display:none">
+      <label>Qual profissional encaminhou?</label>
+      <select id="tipoEncaminhador">
+        <option value="">Selecione…</option>
+        <option value="Psicólogo">Psicólogo(a)</option>
+        <option value="Médico de família e comunidade (MFC)">Médico de família e comunidade (MFC)</option>
+        <option value="Clínico">Clínico(a) geral</option>
+        <option value="Outro especialista">Outro(a) médico(a) especialista</option>
+        <option value="Nutricionista">Nutricionista</option>
+        <option value="Outro">Outro profissional</option>
+      </select>
+      <label style="margin-top:10px">Nome do profissional</label>
+      <input type="text" id="psicoNome" placeholder="Nome de quem te encaminhou">
+      <div class="hint">Ajuda a equipe a enviar um retorno (contrarreferência) ao profissional, com a sua autorização.</div>
+    </div>
+
+    <div class="alert" id="crisisAlert" style="display:none">
+      <strong>Importante</strong>
+      A Elevar é serviço online e não substitui urgência. Se você está em crise, procure o <strong>CAPS</strong> mais próximo, <strong>CVV — 188</strong> (24h) ou uma <strong>UPA</strong>.
+    </div>
+
+    <div class="field" style="margin-top:18px">
+      <label class="check-item" style="background:var(--creme-escuro)">
+        <input type="checkbox" id="aceiteTermos">
+        <span style="font-size:13px">Li e aceito a <a href="termos.html" target="_blank" style="color:var(--verde)">Termos de Uso</a>, a <a href="privacidade.html" target="_blank" style="color:var(--verde)">Política de Privacidade</a> e o <a href="consentimento.html" target="_blank" style="color:var(--verde)">Termo de Consentimento para Teleconsulta</a>, autorizando o tratamento dos meus dados pessoais e sensíveis de saúde para a prestação do atendimento.</span>
+      </label>
+    </div>
+
+    <div class="err-msg" id="bookError" style="display:none"></div>
+
+    <div style="display:flex;justify-content:flex-end;gap:10px;margin-top:24px">
+      <button class="btn btn-ghost btn-small" onclick="closeBookModal()">Cancelar</button>
+      <button class="btn btn-primary btn-small" id="confirmBookBtn" onclick="submitBooking()">Confirmar</button>
+    </div>
+    </div><!-- /bookForm -->
+
+    <div id="bookSuccess" style="display:none;text-align:center;padding:8px 0">
+      <div style="width:64px;height:64px;border-radius:50%;background:var(--verde-suave);color:var(--verde);display:flex;align-items:center;justify-content:center;font-size:30px;margin:0 auto 18px">✓</div>
+      <h3 class="serif" style="font-size:26px;margin-bottom:8px">Quase lá!</h3>
+      <p style="font-size:14.5px;color:#555;margin-bottom:8px">Sua vaga está <strong>reservada</strong>. Para <strong>confirmar</strong>, realize o pagamento agora — leva 1 minuto pelo Pix.</p>
+      <div id="sucResumo" style="background:var(--creme-escuro);border-radius:4px;padding:12px 16px;margin:14px 0;font-size:14px;color:#444"></div>
+      <a id="btnPagar" class="btn btn-primary" href="#" target="_blank" rel="noopener" style="display:inline-block;width:100%;margin-bottom:10px">Pagar e confirmar minha vaga</a>
+      <p style="font-size:12.5px;color:#888;line-height:1.6">Após o pagamento, a equipe envia o link da consulta por WhatsApp e e-mail. Você também recebe o link de pagamento no seu e-mail.</p>
+      <p style="margin-top:14px"><a href="#" onclick="closeBookModal();return false" style="color:var(--verde);font-size:13px">Fechar</a></p>
+    </div>
+  </div>
+</div>
+
+<!-- ====================================== MODAL E-BOOKS ====================================== -->
+<div class="modal-backdrop" id="ebookModal">
+  <div class="modal" style="max-width:520px">
+    <button class="modal-close" onclick="closeEbookModal()">×</button>
+
+    <div id="ebookForm">
+      <h3 class="serif">Receba os dois e-books</h3>
+      <p style="font-size:14px;color:#666;margin:6px 0 22px">Preenche os dados abaixo e libera o download. Você também passa a receber, uma vez por mês, a carta da Elevar — pode descadastrar quando quiser.</p>
+
+      <div class="field"><label>Nome</label><input type="text" id="ebNome" placeholder="Como você gosta de ser chamado"></div>
+      <div class="field"><label>E-mail</label><input type="email" id="ebEmail" placeholder="seuemail@exemplo.com"></div>
+
+      <div class="field" style="margin-top:8px">
+        <label class="check-item" style="background:var(--creme-escuro)">
+          <input type="checkbox" id="ebAceite">
+          <span style="font-size:13px">Concordo em receber os e-books e a newsletter mensal da Elevar Saúde Mental no e-mail acima, e li a <a href="privacidade.html" target="_blank" style="color:var(--verde)">Política de Privacidade</a>.</span>
+        </label>
+      </div>
+
+      <div class="err-msg" id="ebError" style="display:none"></div>
+
+      <div style="display:flex;justify-content:flex-end;gap:10px;margin-top:20px">
+        <button class="btn btn-ghost btn-small" onclick="closeEbookModal()">Cancelar</button>
+        <button class="btn btn-primary btn-small" id="ebSubmitBtn" onclick="submitEbook()">Liberar download</button>
+      </div>
+    </div>
+
+    <div id="ebookSuccess" style="display:none;text-align:center;padding:14px 0">
+      <div class="success-icon" style="width:64px;height:64px;font-size:30px;margin:0 auto 18px;background:var(--verde-suave);color:var(--verde);border-radius:50%;display:flex;align-items:center;justify-content:center">✓</div>
+      <h3 class="serif" style="font-size:26px;margin-bottom:8px">Pronto.</h3>
+      <p style="font-size:14.5px;color:#555;margin-bottom:24px">Os dois e-books estão liberados abaixo. Boa leitura.</p>
+      <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap">
+        <a class="btn btn-primary btn-small" href="ebook-antidepressivos.pdf" download>Baixar · Antidepressivos sem medo</a>
+        <a class="btn btn-primary btn-small" href="ebook-30-perguntas.pdf" download>Baixar · 30 perguntas</a>
+      </div>
+      <p style="font-size:12px;color:#999;margin-top:18px;font-style:italic">Em breve você também passa a receber a carta mensal da Elevar no seu e-mail.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ====================================== MODAL DE DETALHE (PROFISSIONAL) ====================================== -->
+<div class="modal-backdrop" id="detailModal">
+  <div class="modal">
+    <button class="modal-close" onclick="closeDetailModal()">×</button>
+    <h3 class="serif">Detalhes do agendamento</h3>
+    <div id="detailBody" style="margin-top:18px"></div>
+    <div style="display:flex;justify-content:flex-end;gap:10px;margin-top:24px">
+      <button class="btn btn-ghost btn-small" onclick="closeDetailModal()">Fechar</button>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <svg class="elv-svg elv-footer-logo" viewBox="0 0 400 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Elevar Saúde Mental">
+    <path d="M200,128 C175,118 132,100 118,52 C162,66 193,96 200,128 Z" fill="#B7E4C7"/>
+    <path d="M200,128 C225,118 268,100 282,52 C238,66 207,96 200,128 Z" fill="#FFFFFF"/>
+    <circle cx="200" cy="38" r="13" fill="#E89B5A"/>
+    <text x="200" y="200" text-anchor="middle" font-family="Cormorant Garamond, serif" font-size="62" font-weight="500" letter-spacing="8" fill="#FFFFFF">ELEVAR</text>
+    <text x="200" y="238" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="14" letter-spacing="6" fill="#B7E4C7">SAÚDE MENTAL</text>
+  </svg>
+  <p>Atendimento médico em saúde mental, online, com vagas limitadas mensais e critério social.</p>
+  <p style="margin-top:8px"><a href="mailto:elevarsaudemental@gmail.com" style="color:var(--verde-suave);text-decoration:none">elevarsaudemental@gmail.com</a></p>
+  <p style="margin-top:6px"><a href="https://instagram.com/elevarsaudemental" target="_blank" rel="noopener" style="color:var(--verde-suave);text-decoration:none">@elevarsaudemental</a></p>
+  <p style="margin-top:14px"><a href="psicologos.html" style="color:#fff;text-decoration:none;border:1px solid var(--verde-suave);padding:8px 18px;border-radius:2px;font-size:12px;letter-spacing:1px;text-transform:uppercase">Psicólogos parceiros →</a></p>
+  <div class="legal-links" style="margin-top:18px">
+    <a href="materiais.html">Materiais</a>
+    <a href="blog.html">Blog</a>
+    <a href="sobre.html">Sobre</a>
+  </div>
+  <div class="legal-links" style="margin-top:8px">
+    <a href="privacidade.html">Política de Privacidade</a>
+    <a href="termos.html">Termos de Uso</a>
+    <a href="consentimento.html">Termo de Consentimento</a>
+  </div>
+  <div class="small">© 2026 Elevar Saúde Mental · Em conformidade com CFM e LGPD</div>
+</footer>
+
+<div class="cookie-bar" id="cookieBar">
+  <p>Usamos apenas cookies estritamente necessários para o funcionamento do site. Saiba mais na nossa <a href="privacidade.html">Política de Privacidade</a>.</p>
+  <button onclick="acceptCookies()">Entendi</button>
+</div>
+
+<!-- EmailJS — biblioteca oficial (carrega antes do módulo, expõe window.emailjs) -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script type="module">
+/* ============================================================
+   CONFIGURAÇÃO SUPABASE — preencha após criar o projeto em supabase.com
+   ============================================================ */
+const SUPABASE_URL = 'https://jihryciimzffyjbcphks.supabase.co';
+const SUPABASE_KEY = 'sb_publishable_TMCOSnSWCzPdj4zerJBZpA_PoalNXjJ';
+
+/* ============================================================
+   CONFIGURAÇÃO EMAILJS — preencha após criar conta em emailjs.com
+   (ver guia: setup-emailjs.md). Enquanto vazio, o agendamento
+   funciona normalmente, só não dispara e-mail automático.
+   ============================================================ */
+const EMAILJS_PUBLIC_KEY      = 'KP9udACb5DAqeP3L-';
+const EMAILJS_SERVICE_ID      = 'elevar_gmail';
+const EMAILJS_TEMPLATE        = 'template_elevar';  // template genérico (assunto+mensagem vêm do código)
+
+/* E-mail de cada médico (a notificação de agendamento vai pro médico dono do horário).
+   Ao adicionar/trocar médico, atualize este mapa com o id do profissional. */
+const PROF_EMAILS = {
+  '6c624bef-aac5-4526-8700-0e2e20689b2b': 'sofiateixeiragomes@gmail.com', // Sofia
+  'f2963cd9-5605-4dfe-95c3-ae863f5b7e78': 'mateusolvstn@gmail.com',       // Mateus
+  '18996a33-aa4c-4eaa-95ef-c28c05dafca8': 'pradrumm@gmail.com'            // Priscilla
+};
+const EMAIL_FALLBACK = 'elevarsaudemental@gmail.com';
+
+import { createClient } from 'https://esm.sh/@supabase/supabase-js@2';
+const emailjs = window.emailjs;  // biblioteca carregada via CDN acima
+let supabase = null;
+if(SUPABASE_URL && SUPABASE_KEY){
+  supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
+} else {
+  document.getElementById('configBanner').style.display = 'block';
+}
+const emailjsReady = !!(EMAILJS_PUBLIC_KEY && EMAILJS_SERVICE_ID && emailjs);
+if(emailjsReady){ emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY }); }
+
+/* Envio genérico: o código monta assunto + mensagem; o EmailJS só entrega.
+   Um único template ('template_elevar') serve para todos os tipos de e-mail. */
+function enviarEmail({to, subject, message, reply_to}){
+  if(!emailjsReady) return;
+  try {
+    emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE, {
+      to_email: to,
+      subject: subject,
+      message: message.replace(/\n/g,'<br>'),
+      reply_to: reply_to || EMAIL_FALLBACK,
+      from_name: 'Elevar Saúde Mental'
+    }).catch(()=>{});
+  } catch(e) {}
+}
+
+/* Estado */
+const state = {
+  view: 'landing',
+  weekStart: startOfWeek(new Date()),
+  slots: [],            // todos os slots futuros (visão paciente)
+  professionals: [],    // lista pública de profissionais ativos
+  profFilter: null,
+  selectedSlot: null,
+  selectedVia: null,
+  session: null,        // {user, profile}
+  mySlots: [],
+  myBookings: [],
+  myHistory: [],
+};
+
+/* Utilidades */
+function startOfWeek(d){const x=new Date(d);const day=x.getDay();const diff=(day===0?-6:1-day);x.setDate(x.getDate()+diff);x.setHours(0,0,0,0);return x}
+function addDays(d,n){const x=new Date(d);x.setDate(x.getDate()+n);return x}
+function ymd(d){const y=d.getFullYear();const m=String(d.getMonth()+1).padStart(2,'0');const dd=String(d.getDate()).padStart(2,'0');return y+'-'+m+'-'+dd}
+function fmtDate(d){return d.toLocaleDateString('pt-BR',{day:'2-digit',month:'long',year:'numeric'})}
+function fmtDay(d){return d.toLocaleDateString('pt-BR',{weekday:'short'}).replace('.','')}
+function fmtMonth(d){return d.toLocaleDateString('pt-BR',{month:'long',year:'numeric'})}
+function toast(msg, isErr){const t=document.createElement('div');t.className='toast'+(isErr?' error':'');t.textContent=msg;document.body.appendChild(t);setTimeout(()=>t.remove(),3500)}
+function isPast(dateStr, timeStr){const dt=new Date(`${dateStr}T${timeStr}`);return dt<new Date()}
+
+/* ============== ROTEAMENTO DE VIEWS ============== */
+window.goView = function(v){
+  state.view = v;
+  document.querySelectorAll('.view').forEach(el=>el.classList.remove('active'));
+  const id = v==='prof'?'view-prof-login':(v==='prof-dash'?'view-prof-dash':'view-'+v);
+  const target = document.getElementById(id);
+  if(target) target.classList.add('active');
+  document.querySelectorAll('.nav-btn').forEach(b=>b.classList.toggle('active', b.dataset.view===v || (v==='prof-dash' && b.dataset.view==='prof')));
+  window.scrollTo({top:0, behavior:'smooth'});
+  if(v==='patient') loadPatientView();
+  if(v==='prof-dash') loadDashboard();
+};
+window.goProf = async function(){
+  if(!supabase){ goView('prof'); return; }
+  const { data:{ session } } = await supabase.auth.getSession();
+  if(session){ await loadSession(session); goView('prof-dash'); }
+  else goView('prof');
+};
+
+window.toggleFaq = function(btn){
+  const item = btn.parentElement;
+  const ans = item.querySelector('.faq-a');
+  const open = item.classList.toggle('open');
+  ans.style.maxHeight = open ? (ans.scrollHeight + 'px') : '0';
+};
+
+window.toggleAuth = function(which){
+  document.getElementById('loginCard').style.display = which==='login'?'block':'none';
+  document.getElementById('registerCard').style.display = which==='register'?'block':'none';
+  document.getElementById('forgotCard').style.display = which==='forgot'?'block':'none';
+};
+
+window.doForgot = async function(){
+  const email = document.getElementById('forgotEmail').value.trim();
+  const err = document.getElementById('forgotError');
+  const success = document.getElementById('forgotSuccess');
+  err.style.display='none'; success.style.display='none';
+  if(!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){ err.textContent='E-mail inválido.'; err.style.display='block'; return; }
+  if(!supabase){ err.textContent='Backend não configurado.'; err.style.display='block'; return; }
+  const { error } = await supabase.auth.resetPasswordForEmail(email, {
+    redirectTo: window.location.origin + '/index.html'
+  });
+  // Sempre mostra sucesso (não revela se e-mail existe — boas práticas)
+  success.style.display='block';
+};
+
+window.switchTab = function(t, btn){
+  document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+  document.querySelectorAll('.tab-panel').forEach(p=>p.classList.remove('active'));
+  btn.classList.add('active');
+  document.getElementById('tab-'+t).classList.add('active');
+};
+
+/* ============== REDE DE PSICÓLOGOS (diretório de busca) ============== */
+state.rede = [];
+window.loadRede = async function(){
+  if(!supabase || !state.session) return;
+  const cont = document.getElementById('redeResultado');
+  cont.innerHTML = '<div class="empty">Carregando…</div>';
+  const { data, error } = await supabase.from('psicologos_parceiros').select('*').order('nome');
+  if(error){ cont.innerHTML = '<div class="empty">Erro: '+error.message+'</div>'; return; }
+  state.rede = data || [];
+  renderRede();
+};
+
+window.renderRede = function(){
+  const cont = document.getElementById('redeResultado');
+  const busca = (document.getElementById('fBusca').value||'').toLowerCase().trim();
+  const mod = document.getElementById('fModalidade').value;
+  const soc = document.getElementById('fSocial').value;
+  const st = document.getElementById('fStatus').value;
+  const socialLabel = {sim:'Faz social',as_vezes:'Social em alguns casos',nao:'Sem valor social'};
+  let lista = state.rede.filter(p=>{
+    if(st && p.status!==st) return false;
+    if(mod && p.modalidade!==mod && p.modalidade!=='ambos') return false;
+    if(soc==='sim' && p.atende_social!=='sim') return false;
+    if(soc==='as_vezes' && !(p.atende_social==='sim'||p.atende_social==='as_vezes')) return false;
+    if(busca){
+      const blob = `${p.nome} ${p.abordagem} ${p.cidade} ${p.observacoes} ${p.valor_sessao}`.toLowerCase();
+      if(!blob.includes(busca)) return false;
+    }
+    return true;
+  });
+  if(lista.length===0){ cont.innerHTML = '<div class="empty">Nenhum psicólogo encontrado com esses filtros.</div>'; return; }
+  cont.innerHTML = lista.map(p=>{
+    const fone = (p.telefone||'').replace(/\D/g,'');
+    const socBadge = p.atende_social==='sim' ? '<span class="badge badge-green">Faz social</span>' : (p.atende_social==='as_vezes' ? '<span class="badge badge-amber">Social às vezes</span>' : '');
+    const stBadge = p.status==='ativo' ? '' : '<span class="badge badge-amber">Pendente</span>';
+    const ativar = p.status!=='ativo' ? `<button class="btn btn-ghost btn-small" onclick="ativarPsico('${p.id}')">Ativar</button>` : '';
+    const info = `${p.nome} — ${p.abordagem||''} — ${p.modalidade||''}${p.cidade?(' ('+p.cidade+')'):''} — ${p.valor_sessao||''} — ${p.telefone||''} ${p.email||''}`;
+    return `<div class="card" style="margin-bottom:12px;padding:18px 20px">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px;flex-wrap:wrap">
+        <div>
+          <div style="font-family:'Cormorant Garamond',serif;font-size:19px;color:var(--verde);font-weight:600">${p.nome} ${socBadge} ${stBadge}</div>
+          <div style="font-size:13px;color:#555;margin-top:3px"><strong style="color:var(--verde)">${p.abordagem||'—'}</strong> · ${({online:'Online',presencial:'Presencial',ambos:'Online e presencial'})[p.modalidade]||p.modalidade||'—'}${p.cidade?(' · '+p.cidade):''}</div>
+          <div style="font-size:13px;color:#555;margin-top:2px">Valor: <strong>${p.valor_sessao||'—'}</strong> · CRP ${p.crp||'—'}</div>
+          ${p.observacoes?`<div style="font-size:12.5px;color:#777;margin-top:6px;font-style:italic">${p.observacoes}</div>`:''}
+          <div style="font-size:12.5px;color:#555;margin-top:6px">
+            ${p.email?`<a href="mailto:${p.email}" style="color:var(--verde)">${p.email}</a>`:''}
+            ${fone?` · <a href="https://wa.me/${fone}" target="_blank" style="color:var(--verde)">${p.telefone}</a>`:''}
+          </div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:6px;align-items:flex-end">
+          ${ativar}
+          <button class="btn btn-ghost btn-small" onclick='copiarPsico(${JSON.stringify(info)})'>Copiar dados</button>
+        </div>
+      </div>
+    </div>`;
+  }).join('');
+};
+
+window.ativarPsico = async function(id){
+  const { error } = await supabase.from('psicologos_parceiros').update({status:'ativo'}).eq('id', id);
+  if(error){ toast(error.message, true); return; }
+  toast('Psicólogo ativado na rede.');
+  loadRede();
+};
+
+window.copiarPsico = function(texto){
+  navigator.clipboard.writeText(texto).then(()=>toast('Dados copiados — cole no WhatsApp/e-mail do paciente.')).catch(()=>toast('Não consegui copiar.', true));
+};
+
+/* ============== AUTH ============== */
+window.doLogin = async function(){
+  const email = document.getElementById('loginEmail').value.trim();
+  const password = document.getElementById('loginPassword').value;
+  const err = document.getElementById('loginError');
+  err.style.display='none';
+  if(!supabase){ err.textContent='Backend não configurado.'; err.style.display='block'; return; }
+  const { data, error } = await supabase.auth.signInWithPassword({email, password});
+  if(error){ err.textContent = error.message; err.style.display='block'; return; }
+  await loadSession(data.session);
+  goView('prof-dash');
+};
+
+window.doRegister = async function(){
+  const name = document.getElementById('regName').value.trim();
+  const email = document.getElementById('regEmail').value.trim();
+  const crm = document.getElementById('regCrm').value.trim();
+  const password = document.getElementById('regPassword').value;
+  const err = document.getElementById('registerError');
+  err.style.display='none';
+  if(!name||!email||!crm||password.length<8){ err.textContent='Preencha todos os campos. Senha mínimo 8 caracteres.'; err.style.display='block'; return; }
+  if(!supabase){ err.textContent='Backend não configurado.'; err.style.display='block'; return; }
+  const { error } = await supabase.auth.signUp({ email, password, options:{ data:{ name, crm } } });
+  if(error){ err.textContent=error.message; err.style.display='block'; return; }
+  // A linha em 'professionals' é criada automaticamente por trigger no banco
+  // (handle_new_professional), nascendo INATIVA. Precisa de aprovação da equipe
+  // para aparecer no calendário público — evita que qualquer pessoa vire médico.
+  toast('Conta criada. A equipe Elevar precisa aprovar seu cadastro antes da ativação.');
+  toggleAuth('login');
+};
+
+window.doLogout = async function(){
+  if(supabase) await supabase.auth.signOut();
+  state.session = null;
+  goView('landing');
+};
+
+async function loadSession(session){
+  const { data: profile } = await supabase.from('professionals').select('*').eq('id', session.user.id).single();
+  state.session = { user: session.user, profile: profile||{name:session.user.email} };
+  document.getElementById('dashWelcome').textContent = `Olá, ${state.session.profile.name||'profissional'}`;
+  // Aba administrativa "Rede de psicólogos": visível apenas para sócios (is_admin)
+  const isAdmin = !!(profile && profile.is_admin);
+  const redeBtn = document.getElementById('tabRedeBtn');
+  if(redeBtn) redeBtn.style.display = isAdmin ? '' : 'none';
+}
+
+/* ============== PATIENT VIEW ============== */
+async function loadPatientView(){
+  renderWeekLabel();
+  if(!supabase){ renderCalendar(); return; }
+  // carrega profissionais ativos e slots da semana
+  const [profsRes, slotsRes] = await Promise.all([
+    supabase.from('professionals').select('id,name').eq('active',true),
+    supabase.from('slots').select('id,professional_id,date,time,duration,status').gte('date', ymd(state.weekStart)).lte('date', ymd(addDays(state.weekStart,6))).order('time')
+  ]);
+  state.professionals = profsRes.data||[];
+  state.slots = slotsRes.data||[];
+  renderProfChips();
+  renderCalendar();
+  updateVagasCount();
+}
+
+async function updateVagasCount(){
+  if(!supabase) return;
+  const today = new Date(); const start = new Date(today.getFullYear(),today.getMonth(),1); const end = new Date(today.getFullYear(),today.getMonth()+1,0);
+  const { data: monthSlots } = await supabase.from('slots').select('id,status').gte('date',ymd(start)).lte('date',ymd(end));
+  const total = monthSlots?.length||0;
+  const disp = monthSlots?.filter(s=>s.status==='available').length||0;
+  document.getElementById('vagasTotal').textContent = total;
+  document.getElementById('vagasDisp').textContent = disp;
+  document.getElementById('vagasInst').textContent = '—';
+  document.getElementById('vagasAbert').textContent = '—';
+  document.getElementById('vagasMesLabel').innerHTML = fmtMonth(today).replace(/^(\w+) (.+)$/, (m,a,b)=>`${a.charAt(0).toUpperCase()+a.slice(1)} · <em>${b}</em>`);
+}
+
+window.weekShift = function(dir){
+  if(dir===0) state.weekStart = startOfWeek(new Date());
+  else state.weekStart = addDays(state.weekStart, dir*7);
+  loadPatientView();
+};
+
+function renderWeekLabel(){
+  const end = addDays(state.weekStart,6);
+  document.getElementById('calWeekLabel').textContent = `${state.weekStart.toLocaleDateString('pt-BR',{day:'2-digit',month:'short'})} – ${end.toLocaleDateString('pt-BR',{day:'2-digit',month:'short',year:'numeric'})}`;
+}
+
+function renderProfChips(){
+  const c = document.getElementById('profChips');
+  if(state.professionals.length===0){ c.innerHTML=''; return; }
+  c.innerHTML = `<button class="chip ${!state.profFilter?'active':''}" onclick="filterProf(null)">Todos</button>` +
+    state.professionals.map(p=>`<button class="chip ${state.profFilter===p.id?'active':''}" onclick="filterProf('${p.id}')">${p.name}</button>`).join('');
+}
+window.filterProf = function(id){ state.profFilter = id; renderProfChips(); renderCalendar(); };
+
+function renderCalendar(){
+  const header = document.getElementById('calHeader');
+  const body = document.getElementById('calBody');
+  const today = ymd(new Date());
+  header.innerHTML = '';
+  body.innerHTML = '';
+  // Empty state: nenhum profissional ativo
+  if(state.professionals.length === 0 && supabase){
+    body.innerHTML = `<div class="empty-rich" style="grid-column:1/-1">
+      <div class="icon">∅</div>
+      <h4>Em breve, novas vagas.</h4>
+      <p>Nossa equipe está finalizando a configuração da agenda. Volte em alguns dias ou escreva para <strong>elevarsaudemental@gmail.com</strong> para ser avisado quando abrirem novas vagas.</p>
+    </div>`;
+    return;
+  }
+  // Empty state: semana sem nenhum slot (mas com profissionais ativos)
+  const weekSlots = state.slots.filter(s => !state.profFilter || s.professional_id===state.profFilter);
+  if(weekSlots.length === 0 && supabase && state.professionals.length > 0){
+    body.innerHTML = `<div class="empty-rich" style="grid-column:1/-1">
+      <div class="icon">⌖</div>
+      <h4>Sem horários nesta semana.</h4>
+      <p>Tente navegar para a próxima semana, ou remover o filtro de profissional se houver algum selecionado.</p>
+    </div>`;
+    // ainda mostra o header dos dias da semana
+    for(let i=0;i<7;i++){
+      const d = addDays(state.weekStart, i);
+      const isToday = ymd(d)===today;
+      header.innerHTML += `<div class="${isToday?'today':''}">${fmtDay(d)}<span class="day-num">${d.getDate()}</span></div>`;
+    }
+    return;
+  }
+  for(let i=0;i<7;i++){
+    const d = addDays(state.weekStart, i);
+    const key = ymd(d);
+    const isToday = key===today;
+    header.innerHTML += `<div class="${isToday?'today':''}">${fmtDay(d)}<span class="day-num">${d.getDate()}</span></div>`;
+    const daySlots = state.slots.filter(s => s.date===key && (!state.profFilter || s.professional_id===state.profFilter));
+    const label = d.toLocaleDateString('pt-BR',{weekday:'long',day:'2-digit',month:'short'});
+    let inner = '';
+    if(daySlots.length===0){
+      inner = `<div class="cal-empty">Sem horários</div>`;
+    } else {
+      daySlots.sort((a,b)=>a.time.localeCompare(b.time));
+      inner = daySlots.map(s=>{
+        const pName = state.professionals.find(p=>p.id===s.professional_id)?.name || '';
+        const past = isPast(s.date, s.time);
+        const cls = (s.status!=='available' || past)?'slot booked':'slot';
+        const onclick = (s.status==='available' && !past)?`onclick="openBookModal('${s.id}')"`:'';
+        return `<button class="${cls}" ${onclick}><span class="slot-time">${s.time.slice(0,5)}</span><span class="slot-prof">${pName}</span></button>`;
+      }).join('');
+    }
+    body.innerHTML += `<div class="cal-col" data-label="${label}">${inner}</div>`;
+  }
+}
+
+/* ============== BOOKING MODAL ============== */
+window.openBookModal = function(slotId){
+  state.selectedSlot = state.slots.find(s=>s.id===slotId);
+  state.selectedVia = null;
+  state.encPsi = null;
+  const s = state.selectedSlot;
+  const d = new Date(s.date+'T12:00:00');
+  const pName = state.professionals.find(p=>p.id===s.professional_id)?.name || '';
+  document.getElementById('bookSummary').innerHTML = `<strong>${pName}</strong> · ${fmtDate(d)} às ${s.time.slice(0,5)}`;
+  // reset
+  ['pNome','pTel','pEmail','pQueixa','codigoInst','psicoNome','tipoEncaminhador'].forEach(id=>document.getElementById(id).value='');
+  document.getElementById('parceiroInst').value='';
+  document.getElementById('aceiteTermos').checked=false;
+  document.querySelectorAll('.crit-chk').forEach(c=>c.checked=false);
+  document.querySelectorAll('.opt-card[data-encpsi]').forEach(c=>c.classList.remove('selected'));
+  document.getElementById('psicoNomeWrap').style.display='none';
+  document.querySelectorAll('.opt-card[data-via]').forEach(c=>c.classList.remove('selected'));
+  document.getElementById('viaInst').style.display='none';
+  document.getElementById('viaAberta').style.display='none';
+  document.getElementById('viaParticular').style.display='none';
+  document.getElementById('crisisAlert').style.display='none';
+  document.getElementById('bookError').style.display='none';
+  document.getElementById('precoBox').style.display='none';
+  document.getElementById('bookForm').style.display='block';
+  document.getElementById('bookSuccess').style.display='none';
+  document.getElementById('confirmBookBtn').classList.remove('loading');
+  document.getElementById('confirmBookBtn').textContent='Confirmar';
+  document.getElementById('bookModal').classList.add('open');
+};
+window.closeBookModal = function(){ document.getElementById('bookModal').classList.remove('open'); };
+
+/* ===== VALORES (exibidos no fluxo de marcação, contexto de contratação) ===== */
+const VALOR_SOCIAL = 200;
+const VALOR_PARTICULAR = {
+  '6c624bef-aac5-4526-8700-0e2e20689b2b': 350,  // Sofia
+  'f2963cd9-5605-4dfe-95c3-ae863f5b7e78': 300,  // Mateus
+  '18996a33-aa4c-4eaa-95ef-c28c05dafca8': 350,  // Priscilla
+};
+// Links de pagamento Asaas por médico e tipo (social = institucional/aberta)
+const LINKS_PAGAMENTO = {
+  '6c624bef-aac5-4526-8700-0e2e20689b2b': { social:'https://www.asaas.com/c/uwd7fpxg6ijrfbc5', particular:'https://www.asaas.com/c/83virpqbtt0dldyi' }, // Sofia
+  'f2963cd9-5605-4dfe-95c3-ae863f5b7e78': { social:'https://www.asaas.com/c/4vwfyvhoz3qjf4z8', particular:'https://www.asaas.com/c/qjuhp2ytd655s8dm' }, // Mateus
+  '18996a33-aa4c-4eaa-95ef-c28c05dafca8': { social:'https://www.asaas.com/c/rqueo2wxiqfqx1s2', particular:'https://www.asaas.com/c/817b09bh8mddtptz' }, // Priscilla
+};
+function getPaymentLink(profId, via){
+  const m = LINKS_PAGAMENTO[profId];
+  if(!m) return '';
+  return (via==='particular') ? m.particular : m.social;
+}
+function brl(v){ return 'R$ ' + v.toFixed(2).replace('.', ','); }
+
+function atualizaPreco(){
+  const box = document.getElementById('precoBox');
+  const valorEl = document.getElementById('precoValor');
+  const notaEl = document.getElementById('precoNota');
+  const via = state.selectedVia;
+  if(!via){ box.style.display='none'; return; }
+  if(via==='institucional' || via==='aberta'){
+    valorEl.textContent = brl(VALOR_SOCIAL);
+    notaEl.textContent = 'Valor social fixo — mesma quantia na primeira consulta e nos retornos.';
+    box.style.display='block';
+  } else if(via==='particular'){
+    const profId = state.selectedSlot?.professional_id;
+    const pName = state.professionals.find(p=>p.id===profId)?.name || 'o profissional';
+    const v = VALOR_PARTICULAR[profId];
+    if(v){
+      valorEl.textContent = brl(v);
+      notaEl.textContent = `Consulta com ${pName}.`;
+      box.style.display='block';
+    } else {
+      box.style.display='none';
+    }
+  }
+}
+
+document.querySelectorAll('.opt-card[data-via]').forEach(card=>{
+  card.addEventListener('click', ()=>{
+    document.querySelectorAll('.opt-card[data-via]').forEach(c=>c.classList.remove('selected'));
+    card.classList.add('selected');
+    state.selectedVia = card.dataset.via;
+    document.getElementById('viaInst').style.display = state.selectedVia==='institucional'?'block':'none';
+    document.getElementById('viaAberta').style.display = state.selectedVia==='aberta'?'block':'none';
+    document.getElementById('viaParticular').style.display = state.selectedVia==='particular'?'block':'none';
+    document.getElementById('crisisAlert').style.display = (state.selectedVia==='aberta'||state.selectedVia==='particular')?'block':'none';
+    atualizaPreco();
+  });
+});
+
+// Encaminhado por psicólogo? (sim/não) — mostra o campo do nome quando sim
+document.querySelectorAll('.opt-card[data-encpsi]').forEach(card=>{
+  card.addEventListener('click', ()=>{
+    document.querySelectorAll('.opt-card[data-encpsi]').forEach(c=>c.classList.remove('selected'));
+    card.classList.add('selected');
+    state.encPsi = card.dataset.encpsi;
+    document.getElementById('psicoNomeWrap').style.display = (state.encPsi==='sim') ? 'block' : 'none';
+  });
+});
+
+window.submitBooking = async function(){
+  const err = document.getElementById('bookError');
+  err.style.display='none';
+  const nome = document.getElementById('pNome').value.trim();
+  const tel = document.getElementById('pTel').value.trim();
+  const email = document.getElementById('pEmail').value.trim();
+  const queixa = document.getElementById('pQueixa').value.trim();
+  const via = state.selectedVia;
+  const encPsi = state.encPsi === 'sim';
+  const psicoNome = encPsi ? document.getElementById('psicoNome').value.trim() : '';
+  const tipoEnc = encPsi ? document.getElementById('tipoEncaminhador').value : '';
+  if(!nome || !tel || !email){ err.textContent='Preencha nome, WhatsApp e e-mail.'; err.style.display='block'; return; }
+  if(!via){ err.textContent='Escolha sua via de acesso.'; err.style.display='block'; return; }
+  if(!document.getElementById('aceiteTermos').checked){ err.textContent='É necessário aceitar os Termos, a Política de Privacidade e o Consentimento para teleconsulta.'; err.style.display='block'; return; }
+  let criterios = null, codigo = null, parceiro = null;
+  if(via==='institucional'){
+    parceiro = document.getElementById('parceiroInst').value;
+    codigo = document.getElementById('codigoInst').value.trim();
+    if(!parceiro || codigo.length<4){ err.textContent='Informe parceiro e código.'; err.style.display='block'; return; }
+  } else if(via==='aberta'){
+    criterios = Array.from(document.querySelectorAll('.crit-chk:checked')).map(c=>c.parentElement.querySelector('span').textContent);
+    if(criterios.length===0){ err.textContent='Marque pelo menos um critério.'; err.style.display='block'; return; }
+  }
+  const btn = document.getElementById('confirmBookBtn');
+  btn.classList.add('loading');
+  btn.innerHTML = '<span class="spinner"></span>Enviando...';
+  if(!supabase){
+    err.textContent='Backend não configurado.'; err.style.display='block';
+    btn.classList.remove('loading'); btn.textContent='Confirmar'; return;
+  }
+  // Verifica se slot ainda está disponível (proteção contra race condition)
+  const { data: slotCheck } = await supabase.from('slots').select('status').eq('id', state.selectedSlot.id).single();
+  if(!slotCheck || slotCheck.status !== 'available'){
+    err.innerHTML='Esse horário acabou de ser reservado por outra pessoa. <strong>Vamos atualizar o calendário</strong> e você pode escolher outro horário.';
+    err.style.display='block';
+    btn.classList.remove('loading'); btn.textContent='Confirmar';
+    setTimeout(()=>{ closeBookModal(); loadPatientView(); }, 2200);
+    return;
+  }
+  const payload = {
+    slot_id: state.selectedSlot.id,
+    professional_id: state.selectedSlot.professional_id,
+    patient_name: nome, patient_phone: tel, patient_email: email,
+    via, parceiro, codigo, criterios, queixa, status:'pending',
+    encaminhado_psicologo: encPsi, psicologo_nome: psicoNome || null, tipo_encaminhador: tipoEnc || null,
+    consent_accepted: true, consent_accepted_at: new Date().toISOString()
+  };
+  // Insert SEM .select() — paciente é anônimo e o RLS não permite ler de volta.
+  // O slot é marcado como 'booked' automaticamente por trigger no banco (book_slot_on_insert).
+  const { error } = await supabase.from('bookings').insert(payload);
+  if(error){ err.textContent=error.message; err.style.display='block'; btn.classList.remove('loading'); btn.textContent='Confirmar'; return; }
+
+  // Dispara e-mails de confirmação via EmailJS (best-effort — não bloqueia se falhar)
+  if(emailjsReady){
+    const d = new Date(state.selectedSlot.date+'T12:00:00');
+    const dateFmt = d.toLocaleDateString('pt-BR',{weekday:'long',day:'2-digit',month:'long',year:'numeric'});
+    const dataFmt = dateFmt.charAt(0).toUpperCase()+dateFmt.slice(1);
+    const viaLabel = {institucional:'Cota institucional',aberta:'Cota aberta',particular:'Atendimento particular'}[via] || via;
+    const profId = state.selectedSlot.professional_id;
+    const doctorName = state.doutor?.nome || state.professionals.find(p=>p.id===profId)?.name || '';
+    const hora = state.selectedSlot.time.slice(0,5);
+    const link = getPaymentLink(profId, via);
+    const teamEmail = PROF_EMAILS[profId] || EMAIL_FALLBACK;
+
+    // 1) E-mail para o PACIENTE
+    const msgPaciente =
+`Olá, ${nome.split(' ')[0]}.
+
+Recebemos sua solicitação de consulta na Elevar Saúde Mental.
+
+RESUMO
+• Profissional: ${doctorName}
+• Data: ${dataFmt}
+• Horário: ${hora}
+• Via de acesso: ${viaLabel}
+
+PARA CONFIRMAR SUA VAGA
+Realize o pagamento (Pix ou cartão) neste link:
+${link || '(a equipe enviará o link de pagamento)'}
+
+Sua consulta é confirmada após o pagamento. Em seguida, a equipe envia o link da videochamada por WhatsApp e e-mail.
+
+Importante: a Elevar é um serviço online e não substitui atendimento de urgência. Em crise, procure o CAPS mais próximo, ligue para o CVV (188 — 24h) ou vá a uma UPA.
+
+Com atenção,
+Equipe Elevar Saúde Mental
+elevarsaudemental.com.br`;
+    enviarEmail({ to: email, subject: 'Sua solicitação de consulta foi recebida · Elevar Saúde Mental', message: msgPaciente });
+
+    // 2) E-mail para a EQUIPE (médico dono do horário)
+    const msgEquipe =
+`NOVO AGENDAMENTO — contatar o paciente em até 24h
+
+PACIENTE
+• Nome: ${nome}
+• WhatsApp: ${tel}  (https://wa.me/${tel.replace(/\D/g,'')})
+• E-mail: ${email}
+
+CONSULTA
+• Data/horário: ${dataFmt} às ${hora}
+• Profissional: ${doctorName}
+• Via: ${viaLabel}${parceiro?`\n• Parceiro: ${parceiro} (código: ${codigo||'—'})`:''}
+${encPsi?`• Encaminhado por: ${tipoEnc||'(tipo não informado)'} — ${psicoNome||'(nome não informado)'}  → considerar contrarreferência`:'• Encaminhado por outro profissional: não'}
+
+${(criterios&&criterios.length)?('CRITÉRIOS DECLARADOS\n'+criterios.map(c=>'• '+c).join('\n')+'\n\n'):''}QUEIXA PRINCIPAL
+${queixa || '(não informada)'}
+
+— Notificação automática do site Elevar.`;
+    enviarEmail({ to: teamEmail, subject: `Novo agendamento · ${nome} · ${dataFmt} ${hora}`, message: msgEquipe, reply_to: email });
+  }
+
+  // Monta a tela de sucesso com o link de pagamento certo (médico + via)
+  const profId = state.selectedSlot.professional_id;
+  const pNome = state.professionals.find(p=>p.id===profId)?.name || '';
+  const valor = (via==='particular') ? (VALOR_PARTICULAR[profId]||0) : VALOR_SOCIAL;
+  const link = getPaymentLink(profId, via);
+  const d2 = new Date(state.selectedSlot.date+'T12:00:00');
+  document.getElementById('sucResumo').innerHTML =
+    `<strong>${pNome}</strong> · ${fmtDate(d2)} às ${state.selectedSlot.time.slice(0,5)}<br>Valor: <strong>${brl(valor)}</strong>`;
+  const btnPagar = document.getElementById('btnPagar');
+  if(link){ btnPagar.href = link; btnPagar.style.display='inline-block'; }
+  else { btnPagar.style.display='none'; }
+  document.getElementById('bookForm').style.display='none';
+  document.getElementById('bookSuccess').style.display='block';
+  loadPatientView();
+  btn.classList.remove('loading'); btn.textContent='Confirmar';
+};
+
+/* ============== DASHBOARD PROFISSIONAL ============== */
+async function loadDashboard(){
+  if(!state.session){ goView('prof'); return; }
+  const profId = state.session.user.id;
+  const today = ymd(new Date());
+  const [slotsRes, bookRes, histRes] = await Promise.all([
+    supabase.from('slots').select('*').eq('professional_id',profId).gte('date',today).order('date').order('time'),
+    supabase.from('bookings').select('*, slots(date,time,duration)').eq('professional_id',profId).gte('slots.date',today).neq('status','canceled').order('created_at',{ascending:false}),
+    supabase.from('bookings').select('*, slots(date,time,duration)').eq('professional_id',profId).lt('slots.date',today).order('created_at',{ascending:false}).limit(50),
+  ]);
+  state.mySlots = slotsRes.data||[];
+  state.myBookings = (bookRes.data||[]).filter(b=>b.slots);
+  state.myHistory = (histRes.data||[]).filter(b=>b.slots);
+  renderStats();
+  renderSlotsTable();
+  renderBookingsList();
+  renderHistoryList();
+}
+
+function renderStats(){
+  const upcoming = state.myBookings.length;
+  const open = state.mySlots.filter(s=>s.status==='available').length;
+  const past = state.myHistory.length;
+  document.getElementById('dashStats').innerHTML = `
+    <div class="stat"><div class="stat-num">${open}</div><div class="stat-label">Horários abertos</div></div>
+    <div class="stat"><div class="stat-num">${upcoming}</div><div class="stat-label">Agendamentos futuros</div></div>
+    <div class="stat"><div class="stat-num">${past}</div><div class="stat-label">Consultas realizadas</div></div>
+  `;
+}
+
+function renderSlotsTable(){
+  const c = document.getElementById('slotsTable');
+  if(state.mySlots.length===0){ c.innerHTML='<div class="empty">Você ainda não tem horários abertos.</div>'; return; }
+  c.innerHTML = `<table class="table"><thead><tr><th>Data</th><th>Hora</th><th>Duração</th><th>Status</th><th></th></tr></thead><tbody>${
+    state.mySlots.map(s=>{
+      const d = new Date(s.date+'T12:00:00');
+      const badge = s.status==='available'?'<span class="badge badge-green">Aberto</span>':(s.status==='booked'?'<span class="badge badge-amber">Reservado</span>':'<span class="badge badge-red">Cancelado</span>');
+      const action = s.status==='available'?`<button class="btn btn-ghost btn-small" onclick="deleteSlot('${s.id}')">Remover</button>`:'';
+      return `<tr><td>${d.toLocaleDateString('pt-BR',{weekday:'short',day:'2-digit',month:'short'})}</td><td>${s.time.slice(0,5)}</td><td>${s.duration} min</td><td>${badge}</td><td>${action}</td></tr>`;
+    }).join('')
+  }</tbody></table>`;
+}
+
+function renderBookingsList(){
+  const c = document.getElementById('bookingsList');
+  if(state.myBookings.length===0){ c.innerHTML='<div class="empty">Sem agendamentos futuros.</div>'; return; }
+  c.innerHTML = `<table class="table"><thead><tr><th>Data</th><th>Hora</th><th>Paciente</th><th>Via</th><th>Status</th><th></th></tr></thead><tbody>${
+    state.myBookings.map(b=>{
+      const d = new Date(b.slots.date+'T12:00:00');
+      const viaBadge = b.via==='institucional'?'<span class="badge badge-green">Institucional</span>':(b.via==='aberta'?'<span class="badge badge-amber">Cota aberta</span>':'<span class="badge badge-terra">Particular</span>');
+      const statBadge = b.status==='confirmed'?'<span class="badge badge-green">Confirmada</span>':(b.status==='pending'?'<span class="badge badge-amber">Pendente</span>':'<span class="badge badge-red">Cancelada</span>');
+      return `<tr><td>${d.toLocaleDateString('pt-BR',{day:'2-digit',month:'short'})}</td><td>${b.slots.time.slice(0,5)}</td><td>${b.patient_name}</td><td>${viaBadge}</td><td>${statBadge}</td><td><button class="btn btn-ghost btn-small" onclick="openDetail('${b.id}')">Ver</button></td></tr>`;
+    }).join('')
+  }</tbody></table>`;
+}
+
+function renderHistoryList(){
+  const c = document.getElementById('historyList');
+  if(state.myHistory.length===0){ c.innerHTML='<div class="empty">Sem histórico.</div>'; return; }
+  c.innerHTML = `<table class="table"><thead><tr><th>Data</th><th>Hora</th><th>Paciente</th><th>Via</th></tr></thead><tbody>${
+    state.myHistory.map(b=>{
+      const d = new Date(b.slots.date+'T12:00:00');
+      return `<tr><td>${d.toLocaleDateString('pt-BR',{day:'2-digit',month:'short',year:'2-digit'})}</td><td>${b.slots.time.slice(0,5)}</td><td>${b.patient_name}</td><td>${b.via}</td></tr>`;
+    }).join('')
+  }</tbody></table>`;
+}
+
+window.openDetail = function(bookingId){
+  const b = [...state.myBookings, ...state.myHistory].find(x=>x.id===bookingId);
+  if(!b) return;
+  const d = new Date(b.slots.date+'T12:00:00');
+  let html = `
+    <div style="display:grid;grid-template-columns:auto 1fr;gap:8px 18px;font-size:14px">
+      <strong style="color:var(--verde)">Paciente</strong><span>${b.patient_name}</span>
+      <strong style="color:var(--verde)">WhatsApp</strong><span><a href="https://wa.me/${b.patient_phone.replace(/\D/g,'')}" target="_blank" style="color:var(--verde)">${b.patient_phone}</a></span>
+      <strong style="color:var(--verde)">E-mail</strong><span>${b.patient_email}</span>
+      <strong style="color:var(--verde)">Data/hora</strong><span>${fmtDate(d)} às ${b.slots.time.slice(0,5)}</span>
+      <strong style="color:var(--verde)">Via</strong><span>${b.via}</span>
+      ${b.parceiro?`<strong style="color:var(--verde)">Parceiro</strong><span>${b.parceiro} (${b.codigo||''})</span>`:''}
+      ${b.criterios?`<strong style="color:var(--verde)">Critérios</strong><span>${b.criterios.join('; ')}</span>`:''}
+      ${b.queixa?`<strong style="color:var(--verde)">Queixa</strong><span>${b.queixa}</span>`:''}
+      ${b.encaminhado_psicologo?`<strong style="color:var(--verde)">Encaminhado por</strong><span>${b.tipo_encaminhador||'(tipo não informado)'} — ${b.psicologo_nome||'(nome não informado)'}<br><em style="color:#888">Considerar contrarreferência (com autorização do paciente)</em></span>`:''}
+    </div>
+  `;
+  document.getElementById('detailBody').innerHTML = html;
+  document.getElementById('detailModal').classList.add('open');
+};
+window.closeDetailModal = function(){ document.getElementById('detailModal').classList.remove('open'); };
+
+/* ============== SLOTS (CRIAR / REMOVER) ============== */
+window.addSlot = async function(){
+  if(!supabase || !state.session){ toast('Faça login primeiro.', true); return; }
+  const date = document.getElementById('newSlotDate').value;
+  const time = document.getElementById('newSlotTime').value;
+  const duration = parseInt(document.getElementById('newSlotDur').value);
+  if(!date || !time){ toast('Preencha data e hora.', true); return; }
+  const { error } = await supabase.from('slots').insert({ professional_id: state.session.user.id, date, time, duration, status:'available' });
+  if(error){ toast(error.message, true); return; }
+  toast('Horário adicionado.');
+  loadDashboard();
+};
+
+window.addRecurring = async function(){
+  if(!supabase || !state.session){ toast('Faça login primeiro.', true); return; }
+  const time = document.getElementById('recurTime').value;
+  const duration = parseInt(document.getElementById('recurDur').value);
+  const weeks = parseInt(document.getElementById('recurWeeks').value);
+  const days = Array.from(document.querySelectorAll('.recur-days input:checked')).map(c=>parseInt(c.value));
+  if(days.length===0){ toast('Selecione pelo menos um dia.', true); return; }
+  const rows = [];
+  const start = new Date(); start.setHours(0,0,0,0);
+  for(let w=0; w<weeks; w++){
+    for(const dow of days){
+      const d = addDays(start, w*7);
+      const diff = (dow - d.getDay() + 7) % 7;
+      const target = addDays(d, diff);
+      if(target < start) continue;
+      rows.push({ professional_id: state.session.user.id, date: ymd(target), time, duration, status:'available' });
+    }
+  }
+  if(rows.length===0){ toast('Nenhum slot a criar.', true); return; }
+  const { error } = await supabase.from('slots').insert(rows);
+  if(error){ toast(error.message, true); return; }
+  toast(`${rows.length} horários criados.`);
+  loadDashboard();
+};
+
+window.deleteSlot = async function(id){
+  if(!confirm('Remover esse horário?')) return;
+  const { error } = await supabase.from('slots').delete().eq('id', id);
+  if(error){ toast(error.message, true); return; }
+  toast('Horário removido.');
+  loadDashboard();
+};
+
+/* ============== E-BOOK CAPTURE ============== */
+window.openEbookModal = function(){
+  document.getElementById('ebookForm').style.display='block';
+  document.getElementById('ebookSuccess').style.display='none';
+  ['ebNome','ebEmail'].forEach(id=>document.getElementById(id).value='');
+  document.getElementById('ebAceite').checked=false;
+  document.getElementById('ebError').style.display='none';
+  document.getElementById('ebookModal').classList.add('open');
+};
+window.closeEbookModal = function(){ document.getElementById('ebookModal').classList.remove('open'); };
+
+window.submitEbook = async function(){
+  const err = document.getElementById('ebError');
+  err.style.display='none';
+  const nome = document.getElementById('ebNome').value.trim();
+  const email = document.getElementById('ebEmail').value.trim();
+  if(!nome || !email){ err.textContent='Preencha nome e e-mail.'; err.style.display='block'; return; }
+  if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){ err.textContent='E-mail inválido.'; err.style.display='block'; return; }
+  if(!document.getElementById('ebAceite').checked){ err.textContent='É necessário aceitar para receber.'; err.style.display='block'; return; }
+  const btn = document.getElementById('ebSubmitBtn');
+  btn.disabled=true; btn.textContent='Enviando...';
+  if(supabase){
+    const { error } = await supabase.from('leads').insert({
+      name: nome, email,
+      source: 'ebook-form',
+      consent_accepted: true,
+      consent_accepted_at: new Date().toISOString()
+    });
+    if(error && !error.message.includes('duplicate')){
+      err.textContent = error.message; err.style.display='block';
+      btn.disabled=false; btn.textContent='Liberar download';
+      return;
+    }
+  }
+  // libera download (mesmo sem backend — para a UX)
+  document.getElementById('ebookForm').style.display='none';
+  document.getElementById('ebookSuccess').style.display='block';
+  btn.disabled=false; btn.textContent='Liberar download';
+};
+
+/* ============== COOKIE BANNER ============== */
+window.acceptCookies = function(){
+  try{ localStorage.setItem('elv_cookie_ok','1'); }catch(e){}
+  document.getElementById('cookieBar').classList.remove('show');
+};
+function checkCookieBanner(){
+  try{ if(!localStorage.getItem('elv_cookie_ok')) setTimeout(()=>document.getElementById('cookieBar').classList.add('show'), 800); }
+  catch(e){ document.getElementById('cookieBar').classList.add('show'); }
+}
+
+/* ============== RESET PASSWORD (vindo de link do e-mail) ============== */
+async function handlePasswordRecovery(){
+  if(!supabase) return false;
+  // Detecta se está retornando de link de redefinição de senha
+  const hash = window.location.hash;
+  if(hash.includes('type=recovery') || hash.includes('access_token')){
+    const novaSenha = prompt('Defina sua nova senha (mínimo 8 caracteres):');
+    if(novaSenha && novaSenha.length >= 8){
+      const { error } = await supabase.auth.updateUser({ password: novaSenha });
+      if(error){ alert('Erro: ' + error.message); return false; }
+      toast('Senha redefinida com sucesso. Faça login com a nova senha.');
+      history.replaceState(null,'',window.location.pathname);
+      goView('prof');
+      return true;
+    }
+  }
+  return false;
+}
+
+/* ============== INIT ============== */
+(async ()=>{
+  document.getElementById('newSlotDate').value = ymd(new Date());
+  if(supabase){
+    const recovered = await handlePasswordRecovery();
+    if(!recovered){
+      const { data:{ session } } = await supabase.auth.getSession();
+      if(session) await loadSession(session);
+    }
+  }
+  goView('landing');
+  loadPatientView();
+  checkCookieBanner();
+})();
+</script>
+
+<!--
+================================================================
+SQL — RODAR NO SUPABASE (SQL EDITOR) ANTES DE USAR
+================================================================
+
+-- 1. Tabela de profissionais
+create table public.professionals (
+  id uuid primary key references auth.users(id) on delete cascade,
+  name text not null,
+  email text not null unique,
+  crm text,
+  active boolean default false,
+  created_at timestamptz default now()
+);
+
+-- 2. Tabela de horários
+create table public.slots (
+  id uuid primary key default gen_random_uuid(),
+  professional_id uuid references public.professionals(id) on delete cascade,
+  date date not null,
+  time time not null,
+  duration int not null default 50,
+  status text not null default 'available' check (status in ('available','booked','canceled')),
+  created_at timestamptz default now()
+);
+create index on public.slots(date);
+create index on public.slots(professional_id);
+
+-- 3. Tabela de agendamentos
+create table public.bookings (
+  id uuid primary key default gen_random_uuid(),
+  slot_id uuid references public.slots(id) on delete cascade,
+  professional_id uuid references public.professionals(id) on delete cascade,
+  patient_name text not null,
+  patient_phone text not null,
+  patient_email text not null,
+  via text not null check (via in ('institucional','aberta','particular')),
+  parceiro text,
+  codigo text,
+  criterios text[],
+  queixa text,
+  status text not null default 'pending' check (status in ('pending','confirmed','canceled','done')),
+  consent_accepted boolean not null default false,
+  consent_accepted_at timestamptz,
+  created_at timestamptz default now()
+);
+create index on public.bookings(professional_id);
+
+-- 4. Tabela de leads (captura de e-mail dos e-books / newsletter)
+create table public.leads (
+  id uuid primary key default gen_random_uuid(),
+  name text not null,
+  email text not null unique,
+  source text,
+  consent_accepted boolean not null default false,
+  consent_accepted_at timestamptz,
+  created_at timestamptz default now()
+);
+
+-- 5. RLS
+alter table public.professionals enable row level security;
+alter table public.slots enable row level security;
+alter table public.bookings enable row level security;
+alter table public.leads enable row level security;
+
+-- Leads: qualquer um (anon) pode se inscrever; só profissional logado pode ver a lista
+create policy "anon cria lead" on public.leads for insert with check (true);
+create policy "prof lê leads" on public.leads for select using (auth.role() = 'authenticated');
+
+-- Profissionais ativos visíveis publicamente (id + name)
+create policy "profs públicos" on public.professionals for select using (active = true);
+-- Cada profissional gerencia seu próprio registro
+create policy "prof gerencia próprio" on public.professionals for all using (auth.uid() = id) with check (auth.uid() = id);
+
+-- Slots: qualquer um vê os disponíveis; profissional gerencia os seus
+create policy "slots públicos" on public.slots for select using (true);
+create policy "prof gerencia próprios slots" on public.slots for all using (auth.uid() = professional_id) with check (auth.uid() = professional_id);
+
+-- Bookings: paciente (anon) pode criar; profissional vê só os seus
+create policy "anon cria booking" on public.bookings for insert with check (true);
+create policy "prof vê próprios bookings" on public.bookings for select using (auth.uid() = professional_id);
+create policy "prof atualiza próprios bookings" on public.bookings for update using (auth.uid() = professional_id);
+
+-- 6. Quando um booking é cancelado, devolver o slot
+create or replace function release_slot_on_cancel() returns trigger as $$
+begin
+  if new.status = 'canceled' and old.status <> 'canceled' then
+    update public.slots set status='available' where id = new.slot_id;
+  end if;
+  return new;
+end;
+$$ language plpgsql security definer;
+create trigger trg_release_slot after update on public.bookings
+  for each row execute function release_slot_on_cancel();
+
+================================================================
+PASSO A PASSO
+================================================================
+1. Crie um projeto em https://supabase.com (free tier).
+2. Em "Project Settings → API", copie a URL e a "anon public" key.
+3. Cole nas constantes SUPABASE_URL e SUPABASE_KEY no topo do <script>.
+4. Em "SQL Editor", cole e rode o SQL acima.
+5. Em "Authentication → Providers → Email", desative "Confirm email"
+   se quiser cadastro imediato (em produção, mantenha ativo).
+6. Cadastre cada médico criando conta pelo próprio formulário "Criar conta"
+   e marque active=true na tabela professionals (via dashboard do Supabase).
+-->
+</body>
+</html>

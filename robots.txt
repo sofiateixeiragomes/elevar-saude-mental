@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+Disallow: /protocolo-crise.html
+Disallow: /acordo-socios.html
+Disallow: /por-que-pj.html
+Disallow: /diretrizes-clinicas.html
+Disallow: /relatorio-trimestral-parceiro.html
+Disallow: /card-encaminhamento.html
+Disallow: /checklist-prelancamento.md
+Disallow: /parceiros-abordagem.md
+Disallow: /templates-email.md
+Disallow: /instagram-lancamento.md
+Disallow: /elevar_plano_operacional.md
+
+Sitemap: https://elevarsaudemental.com.br/sitemap.xml
