@@ -945,6 +945,19 @@ const PROF_EMAILS = {
 };
 const EMAIL_FALLBACK = 'elevarsaudemental@gmail.com';
 
+/* ============================================================
+   PAGAMENTO OBRIGATÓRIO ANTES DO AGENDAMENTO
+   Quando PAYMENT_FIRST = true, o agendamento redireciona o paciente
+   direto para a tela de pagamento Asaas (gerada pela Edge Function).
+   Os e-mails de confirmação saem do webhook do Asaas, após o pagamento.
+   ATIVAR APENAS após:
+     1) Edge Functions deployadas (create-asaas-payment, asaas-webhook)
+     2) Secrets configurados no Supabase (ASAAS_API_KEY, RESEND_API_KEY, etc.)
+     3) Webhook configurado no painel Asaas
+   ============================================================ */
+const PAYMENT_FIRST = false;
+const FN_BASE = SUPABASE_URL + '/functions/v1';
+
 import { createClient } from 'https://esm.sh/@supabase/supabase-js@2';
 const emailjs = window.emailjs;  // biblioteca carregada via CDN acima
 let supabase = null;
@@ -1405,11 +1418,15 @@ window.submitBooking = async function(){
     setTimeout(()=>{ closeBookModal(); loadPatientView(); }, 2200);
     return;
   }
+  // ID gerado no cliente para conseguirmos referenciar o booking após o insert (RLS não permite SELECT pra anon).
+  const bookingId = (crypto && crypto.randomUUID) ? crypto.randomUUID() : (Date.now()+'-'+Math.random().toString(36).slice(2));
+  const initialStatus = PAYMENT_FIRST ? 'pending_payment' : 'pending';
   const payload = {
+    id: bookingId,
     slot_id: state.selectedSlot.id,
     professional_id: state.selectedSlot.professional_id,
     patient_name: nome, patient_phone: tel, patient_email: email,
-    via, parceiro, codigo, criterios, queixa, status:'pending',
+    via, parceiro, codigo, criterios, queixa, status: initialStatus,
     encaminhado_psicologo: encPsi, psicologo_nome: psicoNome || null, tipo_encaminhador: tipoEnc || null,
     consent_accepted: true, consent_accepted_at: new Date().toISOString()
   };
@@ -1417,6 +1434,28 @@ window.submitBooking = async function(){
   // O slot é marcado como 'booked' automaticamente por trigger no banco (book_slot_on_insert).
   const { error } = await supabase.from('bookings').insert(payload);
   if(error){ err.textContent=error.message; err.style.display='block'; btn.classList.remove('loading'); btn.textContent='Confirmar'; return; }
+
+  // ========= MODO PAGAMENTO OBRIGATÓRIO =========
+  // Chama a Edge Function que cria a cobrança no Asaas e redireciona o paciente.
+  if(PAYMENT_FIRST){
+    try {
+      const r = await fetch(`${FN_BASE}/create-asaas-payment`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer '+SUPABASE_KEY, 'apikey': SUPABASE_KEY },
+        body: JSON.stringify({ booking_id: bookingId })
+      });
+      const j = await r.json();
+      if(!r.ok || !j.invoiceUrl) throw new Error(j.error || 'Não foi possível criar a cobrança.');
+      // Redireciona pro checkout Asaas. O e-mail de confirmação sai do webhook após o pagamento.
+      window.location.href = j.invoiceUrl;
+      return;
+    } catch(e){
+      err.textContent = 'Erro ao iniciar pagamento: '+(e.message||e)+'. Tente novamente em alguns minutos ou entre em contato pelo WhatsApp.';
+      err.style.display='block';
+      btn.classList.remove('loading'); btn.textContent='Confirmar';
+      return;
+    }
+  }
 
   // Dispara e-mails de confirmação via EmailJS (best-effort — não bloqueia se falhar)
   if(emailjsReady){
