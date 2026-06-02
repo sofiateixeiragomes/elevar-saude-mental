@@ -207,6 +207,9 @@ window.enviar = async function(){
   // Resumo de valor (texto) para compatibilidade com a coluna antiga
   const valorResumo = [valorOnline?('Online '+valorOnline):'', valorPresencial?('Presencial '+valorPresencial):''].filter(Boolean).join(' · ');
   const socialResumo = (socialOnline==='sim'||socialPresencial==='sim') ? 'sim' : ((socialOnline==='as_vezes'||socialPresencial==='as_vezes')?'as_vezes':'nao');
+  // Gera o token de gerenciamento no cliente para conseguirmos colocar o link no e-mail
+  // (RLS impede ler de volta após o insert anon).
+  const manageToken = (crypto && crypto.randomUUID) ? crypto.randomUUID().replace(/-/g,'') : (Date.now().toString(36)+Math.random().toString(36).slice(2)+Math.random().toString(36).slice(2));
   const { error } = await supabase.from('psicologos_parceiros').insert({
     nome, crp, email, telefone: tel, abordagem, modalidade, cidade,
     valor_sessao: valorResumo, atende_social: socialResumo,
@@ -214,6 +217,7 @@ window.enviar = async function(){
     valor_presencial: valorPresencial||null, social_presencial: socialPresencial||null,
     listar_publico: listarPublico,
     observacoes: obs, status: 'pendente',
+    manage_token: manageToken,
     consent_accepted: true, consent_accepted_at: new Date().toISOString()
   });
   if(error){ err.textContent='Erro ao enviar: '+error.message; err.style.display='block'; btn.disabled=false; btn.textContent='Enviar cadastro'; return; }
@@ -233,6 +237,10 @@ O QUE VOCÊ ENVIOU
 • Valor da sessão: ${valorResumo}
 
 Nossa equipe vai avaliar seu cadastro e entrar em contato em até 7 dias, pelo e-mail ou WhatsApp que você informou.
+
+GERENCIAR SEU PERFIL
+Você pode editar seus dados, abordagens e a opção de aparecer (ou não) na lista pública a qualquer momento por este link único (guarde com cuidado):
+https://elevarsaudemental.com.br/meu-perfil.html?t=${manageToken}
 
 Nossa parceria é uma rede clínica de mão dupla, baseada na necessidade do paciente — sem cota, sem comissão, dentro do que CFM e CFP determinam.
 

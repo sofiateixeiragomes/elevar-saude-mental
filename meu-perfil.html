@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meu perfil · Rede de psicólogos · Elevar Saúde Mental</title>
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#2D6A4F">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'><rect width='200' height='200' fill='%23FAF7F2'/><path d='M100,128 C75,118 32,100 18,52 C62,66 93,96 100,128 Z' fill='%234D8A6B'/><path d='M100,128 C125,118 168,100 182,52 C138,66 107,96 100,128 Z' fill='%232D6A4F'/><circle cx='100' cy='38' r='14' fill='%23B5743A'/></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--verde:#2D6A4F;--verde-claro:#40916C;--verde-suave:#B7E4C7;--creme:#FAF7F2;--creme-escuro:#EDE8DF;--cinza:#3A3A3A;--cinza-claro:#777;--borda:#E5DFD3}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'DM Sans',sans-serif;background:var(--creme);color:var(--cinza);line-height:1.7;font-weight:300;min-height:100vh}
+  header{text-align:center;padding:34px 20px 6px}
+  header svg{height:54px}
+  main{max-width:640px;margin:24px auto 60px;padding:0 22px}
+  .card{background:#fff;border:1px solid var(--borda);border-radius:8px;padding:30px 28px}
+  h1{font-family:'Cormorant Garamond',serif;font-weight:400;font-size:30px;color:var(--verde);line-height:1.15;margin-bottom:6px}
+  .sub{font-size:13.5px;color:var(--cinza-claro);margin-bottom:24px}
+  .field{margin-bottom:16px}
+  .field label{display:block;font-size:11.5px;letter-spacing:1.4px;text-transform:uppercase;color:var(--verde);font-weight:500;margin-bottom:6px}
+  .field input[type=text],.field input[type=email],.field input[type=tel],.field textarea,.field select{
+    width:100%;padding:11px 13px;border:1px solid var(--borda);border-radius:3px;background:var(--creme);
+    font-family:'DM Sans',sans-serif;font-size:14px;color:var(--cinza);transition:border .15s
+  }
+  .field input:focus,.field textarea:focus,.field select:focus{outline:none;border-color:var(--verde)}
+  .radio-row{display:flex;gap:8px;flex-wrap:wrap}
+  .radio-row label{flex:1;min-width:100px;display:flex;align-items:center;gap:8px;padding:10px 12px;background:var(--creme);border:1px solid var(--borda);border-radius:3px;font-size:13px;cursor:pointer}
+  .ab-grid{display:grid;grid-template-columns:1fr 1fr;gap:7px}
+  @media(max-width:540px){.ab-grid{grid-template-columns:1fr}}
+  .ab-item{display:flex;align-items:center;gap:9px;padding:10px 12px;background:var(--creme);border:1px solid var(--borda);border-radius:3px;cursor:pointer;font-size:13px;color:#444}
+  .ab-item input{accent-color:var(--verde);width:15px;height:15px;flex-shrink:0}
+  .toggle{display:flex;align-items:flex-start;gap:11px;padding:14px;background:#fff;border:2px solid var(--verde-suave);border-radius:4px;cursor:pointer;font-size:14px;line-height:1.55}
+  .toggle input{accent-color:var(--verde);width:18px;height:18px;margin-top:2px;flex-shrink:0}
+  .toggle strong{color:var(--verde);display:block;margin-bottom:2px}
+  .bloco{background:var(--creme-escuro);padding:16px;border-radius:4px;border:1px solid var(--borda);margin-bottom:16px}
+  .bloco h3{font-size:11.5px;letter-spacing:1.4px;text-transform:uppercase;color:var(--verde);font-weight:500;margin-bottom:10px}
+  .actions{display:flex;gap:12px;flex-wrap:wrap;justify-content:space-between;align-items:center;margin-top:24px;padding-top:20px;border-top:1px solid var(--borda)}
+  .btn{display:inline-block;background:var(--verde);color:#fff;border:none;cursor:pointer;font-family:'DM Sans',sans-serif;font-weight:500;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;padding:13px 26px;border-radius:3px;text-decoration:none}
+  .btn:disabled{opacity:.6;cursor:wait}
+  .btn-danger{background:transparent;color:#991B1B;border:1px solid #FCA5A5}
+  .msg-ok{background:#D1FAE5;color:#065F46;padding:14px 18px;border-radius:4px;font-size:14px;margin-bottom:18px}
+  .msg-err{background:#FEE2E2;color:#991B1B;padding:14px 18px;border-radius:4px;font-size:14px;margin-bottom:18px}
+  .hint{font-size:12.5px;color:var(--cinza-claro);margin-top:6px;line-height:1.55}
+  .footer-help{text-align:center;margin-top:22px;font-size:12.5px;color:var(--cinza-claro)}
+  .footer-help a{color:var(--verde)}
+</style>
+</head>
+<body>
+<header>
+  <a href="index.html"><svg viewBox="0 0 400 280" xmlns="http://www.w3.org/2000/svg"><path d="M200,128 C175,118 132,100 118,52 C162,66 193,96 200,128 Z" fill="#4D8A6B"/><path d="M200,128 C225,118 268,100 282,52 C238,66 207,96 200,128 Z" fill="#2D6A4F"/><circle cx="200" cy="38" r="13" fill="#B5743A"/><text x="200" y="200" text-anchor="middle" font-family="Cormorant Garamond, serif" font-size="62" font-weight="500" letter-spacing="8" fill="#1F4D38">ELEVAR</text><text x="200" y="238" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="14" letter-spacing="6" fill="#5C9176">SAÚDE MENTAL</text></svg></a>
+</header>
+<main>
+  <div class="card" id="card">
+    <p>Carregando seu perfil…</p>
+  </div>
+  <p class="footer-help">Algum problema? Fale com a equipe no <a href="https://wa.me/556799505131">WhatsApp (67) 99950-5131</a>.</p>
+</main>
+
+<script>
+const FN = 'https://jihryciimzffyjbcphks.supabase.co/functions/v1/manage-psicologo';
+const ABORDAGENS = [
+  "Terapia Cognitivo-Comportamental (TCC)",
+  "Terapia Comportamental Dialética (DBT)",
+  "Terapia de Aceitação e Compromisso (ACT)",
+  "Terapia do Esquema",
+  "Psicanálise / Psicodinâmica",
+  "Terapia Focada na Compaixão (CFT)",
+  "Terapia Sistêmica / Familiar",
+  "Análise do Comportamento",
+  "Humanista / Centrada na Pessoa",
+  "Fenomenológico-Existencial",
+  "Terapia Afirmativa",
+  "Logoterapia",
+  "EMDR",
+];
+const params = new URLSearchParams(location.search);
+const token = params.get('t');
+const card = document.getElementById('card');
+
+if(!token){
+  card.innerHTML = '<h1>Link inválido</h1><p>Use o link de perfil que você recebeu no e-mail de cadastro.</p>';
+} else {
+  fetch(`${FN}?t=${encodeURIComponent(token)}`).then(r=>r.json()).then(d=>{
+    if(d.error){ card.innerHTML = `<h1>Não encontrado</h1><p>${d.error}</p>`; return; }
+    render(d.profile);
+  }).catch(e=>{ card.innerHTML = `<h1>Erro</h1><p>${e.message||e}</p>`; });
+}
+
+function render(p){
+  // Abordagens marcadas: contém(name) — para abordagens fora da lista padrão, mostra como "outras" texto livre
+  const checked = new Set();
+  const outras = [];
+  if(p.abordagem){
+    p.abordagem.split(',').map(s=>s.trim()).filter(Boolean).forEach(a=>{
+      if(ABORDAGENS.includes(a)) checked.add(a);
+      else outras.push(a);
+    });
+  }
+  const modalidade = p.modalidade || '';
+
+  card.innerHTML = `
+    <h1>Meu perfil</h1>
+    <div class="sub">Edite suas informações da rede de psicólogos parceiros da Elevar.</div>
+    <div id="msg"></div>
+
+    <div class="field"><label>Nome completo</label><input type="text" id="nome" value="${esc(p.nome||'')}"></div>
+    <div class="field"><label>CRP</label><input type="text" id="crp" value="${esc(p.crp||'')}"></div>
+    <div class="field"><label>E-mail</label><input type="email" id="email" value="${esc(p.email||'')}"></div>
+    <div class="field"><label>WhatsApp</label><input type="tel" id="telefone" value="${esc(p.telefone||'')}"></div>
+
+    <div class="field">
+      <label>Abordagem(ns)</label>
+      <div class="ab-grid">
+        ${ABORDAGENS.map(a=>`<label class="ab-item"><input type="checkbox" name="abordagem" value="${esc(a)}" ${checked.has(a)?'checked':''}><span>${esc(a)}</span></label>`).join('')}
+        <label class="ab-item"><input type="checkbox" id="abOutrasChk" ${outras.length?'checked':''} onchange="document.getElementById('abOutras').style.display=this.checked?'block':'none'"><span>Outra</span></label>
+      </div>
+      <input type="text" id="abOutras" placeholder="Outras abordagens (separe por vírgula)" style="margin-top:8px;display:${outras.length?'block':'none'}" value="${esc(outras.join(', '))}">
+    </div>
+
+    <div class="field">
+      <label>Modalidade</label>
+      <div class="radio-row">
+        <label><input type="radio" name="modalidade" value="online" ${modalidade==='online'?'checked':''} onchange="toggleMod()">Online</label>
+        <label><input type="radio" name="modalidade" value="presencial" ${modalidade==='presencial'?'checked':''} onchange="toggleMod()">Presencial</label>
+        <label><input type="radio" name="modalidade" value="ambos" ${modalidade==='ambos'?'checked':''} onchange="toggleMod()">Os dois</label>
+      </div>
+    </div>
+
+    <div class="field"><label>Cidade / UF</label><input type="text" id="cidade" value="${esc(p.cidade||'')}" placeholder="Ex.: Campo Grande / MS"></div>
+
+    <div class="bloco" id="blocoOnline" style="display:${(modalidade==='online'||modalidade==='ambos')?'block':'none'}">
+      <h3>Atendimento online</h3>
+      <input type="text" id="valorOnline" value="${esc(p.valor_online||'')}" placeholder="Valor — ex.: R$ 120">
+      <div class="hint">Faz valor social/acessível no online?</div>
+      <div class="radio-row" style="margin-top:6px">
+        <label><input type="radio" name="socOnline" value="sim" ${p.social_online==='sim'?'checked':''}>Sim</label>
+        <label><input type="radio" name="socOnline" value="as_vezes" ${p.social_online==='as_vezes'?'checked':''}>Às vezes</label>
+        <label><input type="radio" name="socOnline" value="nao" ${p.social_online==='nao'?'checked':''}>Não</label>
+      </div>
+    </div>
+
+    <div class="bloco" id="blocoPresencial" style="display:${(modalidade==='presencial'||modalidade==='ambos')?'block':'none'}">
+      <h3>Atendimento presencial</h3>
+      <input type="text" id="valorPresencial" value="${esc(p.valor_presencial||'')}" placeholder="Valor — ex.: R$ 180">
+      <div class="hint">Faz valor social/acessível no presencial?</div>
+      <div class="radio-row" style="margin-top:6px">
+        <label><input type="radio" name="socPresencial" value="sim" ${p.social_presencial==='sim'?'checked':''}>Sim</label>
+        <label><input type="radio" name="socPresencial" value="as_vezes" ${p.social_presencial==='as_vezes'?'checked':''}>Às vezes</label>
+        <label><input type="radio" name="socPresencial" value="nao" ${p.social_presencial==='nao'?'checked':''}>Não</label>
+      </div>
+    </div>
+
+    <div class="field"><label>Observações</label><textarea id="observacoes" rows="3" placeholder="Público que atende, especialidades, disponibilidade…">${esc(p.observacoes||'')}</textarea></div>
+
+    <label class="toggle">
+      <input type="checkbox" id="listarPublico" ${p.listar_publico?'checked':''}>
+      <span><strong>Aparecer na lista pública de psicólogos parceiros</strong>
+      Quando marcado, seu nome, abordagens, cidade e contato aparecem em <a href="psicologos.html" target="_blank" style="color:var(--verde)">elevarsaudemental.com.br/psicologos</a> para pacientes te encontrarem. Os valores nunca aparecem. Você pode desmarcar a qualquer momento.</span>
+    </label>
+
+    <div class="actions">
+      <button class="btn" id="btnSalvar" onclick="salvar()">Salvar alterações</button>
+      <button class="btn btn-danger" onclick="sair()">Sair da rede</button>
+    </div>
+  `;
+}
+
+function esc(s){ return String(s||'').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+
+window.toggleMod = function(){
+  const m = (document.querySelector('input[name="modalidade"]:checked')||{}).value;
+  document.getElementById('blocoOnline').style.display = (m==='online'||m==='ambos')?'block':'none';
+  document.getElementById('blocoPresencial').style.display = (m==='presencial'||m==='ambos')?'block':'none';
+};
+
+window.salvar = async function(){
+  const btn = document.getElementById('btnSalvar');
+  btn.disabled = true; btn.textContent = 'Salvando…';
+  const msg = document.getElementById('msg'); msg.innerHTML = '';
+
+  const checks = Array.from(document.querySelectorAll('input[name="abordagem"]:checked')).map(c=>c.value);
+  if(document.getElementById('abOutrasChk').checked){
+    const o = document.getElementById('abOutras').value.trim();
+    if(o) o.split(',').map(s=>s.trim()).filter(Boolean).forEach(s=>checks.push(s));
+  }
+
+  const body = {
+    nome: v('nome'), crp: v('crp'), email: v('email'), telefone: v('telefone'),
+    abordagem: checks.join(', '),
+    modalidade: (document.querySelector('input[name="modalidade"]:checked')||{}).value || null,
+    cidade: v('cidade'),
+    observacoes: v('observacoes'),
+    valor_online: v('valorOnline'), social_online: (document.querySelector('input[name="socOnline"]:checked')||{}).value || null,
+    valor_presencial: v('valorPresencial'), social_presencial: (document.querySelector('input[name="socPresencial"]:checked')||{}).value || null,
+    listar_publico: document.getElementById('listarPublico').checked,
+  };
+
+  try {
+    const r = await fetch(`${FN}?t=${encodeURIComponent(token)}`, { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(body) });
+    const j = await r.json();
+    if(!r.ok || j.error) throw new Error(j.error||'Erro ao salvar.');
+    msg.innerHTML = '<div class="msg-ok">✓ Alterações salvas com sucesso.</div>';
+    window.scrollTo({top:0,behavior:'smooth'});
+  } catch(e){
+    msg.innerHTML = `<div class="msg-err">${e.message||e}</div>`;
+  } finally {
+    btn.disabled = false; btn.textContent = 'Salvar alterações';
+  }
+};
+
+window.sair = async function(){
+  if(!confirm('Tem certeza que quer sair da rede de psicólogos parceiros da Elevar? Seu perfil será removido da lista pública e dos encaminhamentos.')) return;
+  try {
+    const r = await fetch(`${FN}?t=${encodeURIComponent(token)}`, { method:'DELETE' });
+    const j = await r.json();
+    if(!r.ok || j.error) throw new Error(j.error||'Erro.');
+    card.innerHTML = '<h1>Você saiu da rede</h1><p>Seu perfil foi removido da rede de psicólogos parceiros. Se mudar de ideia, é só nos chamar pelo WhatsApp.</p>';
+  } catch(e){
+    alert('Erro: '+(e.message||e));
+  }
+};
+
+function v(id){ return document.getElementById(id).value.trim(); }
+</script>
+</body>
+</html>
