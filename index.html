@@ -382,6 +382,7 @@
         <text x="200" y="238" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="14" letter-spacing="6" fill="#B7E4C7">SAÚDE MENTAL</text>
       </svg>
       <div class="hero-label">Atendimento médico em saúde mental · Online</div>
+      <div style="margin:0 0 28px"><button class="btn btn-light" onclick="goView('patient')">Agendar consulta</button></div>
       <h1>Cuidado em saúde mental <em>com tempo</em>, não com pressa.</h1>
       <div class="hero-divider"></div>
       <p class="hero-sub">Consultas médicas em saúde mental — avaliação, diagnóstico e tratamento medicamentoso quando indicado. Atendimento 100% social, online.</p>
@@ -479,18 +480,6 @@
         </div>
 
       </div>
-    </div>
-  </section>
-
-  <section class="block vagas">
-    <div class="container">
-      <div class="label-sm">Vagas do mês corrente</div>
-      <h2 id="vagasMesLabel">Maio · <em>2026</em></h2>
-      <div class="vagas-grid">
-        <div><div class="vaga-num" id="vagasTotal">—</div><div class="vaga-label">Vagas totais</div></div>
-        <div><div class="vaga-num" id="vagasDisp" style="color:#fff">—</div><div class="vaga-label">Disponíveis</div></div>
-      </div>
-      <div style="margin-top:48px"><button class="btn btn-light" onclick="goView('patient')">Agendar consulta</button></div>
     </div>
   </section>
 
@@ -1110,16 +1099,7 @@ async function loadPatientView(){
   updateVagasCount();
 }
 
-async function updateVagasCount(){
-  if(!supabase) return;
-  const today = new Date(); const start = new Date(today.getFullYear(),today.getMonth(),1); const end = new Date(today.getFullYear(),today.getMonth()+1,0);
-  const { data: monthSlots } = await supabase.from('slots').select('id,status').gte('date',ymd(start)).lte('date',ymd(end));
-  const total = monthSlots?.length||0;
-  const disp = monthSlots?.filter(s=>s.status==='available').length||0;
-  document.getElementById('vagasTotal').textContent = total;
-  document.getElementById('vagasDisp').textContent = disp;
-  document.getElementById('vagasMesLabel').innerHTML = fmtMonth(today).replace(/^(\w+) (.+)$/, (m,a,b)=>`${a.charAt(0).toUpperCase()+a.slice(1)} · <em>${b}</em>`);
-}
+async function updateVagasCount(){ /* seção 'Vagas do mês' removida */ }
 
 window.weekShift = function(dir){
   if(dir===0) state.weekStart = startOfWeek(new Date());
