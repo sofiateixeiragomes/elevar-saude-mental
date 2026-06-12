@@ -114,6 +114,8 @@
   .nav-btn{background:transparent;border:1px solid transparent;color:var(--cinza);font-family:'DM Sans',sans-serif;font-size:13px;letter-spacing:.5px;padding:8px 14px;border-radius:3px;cursor:pointer;transition:all .2s}
   .nav-btn:hover{color:var(--verde);border-color:var(--borda)}
   .nav-btn.active{color:var(--verde);border-color:var(--verde)}
+  .nav-btn.nav-cta{background:var(--verde);color:#fff;border-color:var(--verde);font-weight:500;padding:8px 18px}
+  .nav-btn.nav-cta:hover{background:var(--verde-claro);border-color:var(--verde-claro);color:#fff}
   .btn{display:inline-block;cursor:pointer;font-family:'DM Sans',sans-serif;font-weight:500;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;padding:13px 26px;border-radius:2px;text-decoration:none;border:none;transition:all .25s}
   .btn:disabled{opacity:.4;cursor:not-allowed}
   .btn-primary{background:var(--verde);color:var(--branco)}
@@ -362,7 +364,7 @@
       <a class="nav-btn" href="sobre.html">Sobre</a>
       <a class="nav-btn" href="blog.html">Blog</a>
       <a class="nav-btn" href="materiais.html">Materiais</a>
-      <button class="nav-btn" data-view="patient" onclick="goView('patient')">Agendar</button>
+      <button class="nav-btn nav-cta" data-view="patient" onclick="goView('patient')">Agendar consulta</button>
       <button class="nav-btn" data-view="prof" onclick="goProf()">Profissionais</button>
     </div>
   </nav>
