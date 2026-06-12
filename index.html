@@ -400,6 +400,7 @@
       <p>Não somos uma plataforma de massa. Não somos uma promessa de cura rápida. Somos um número pequeno de vagas mensais, oferecidas com seriedade clínica por um grupo de médicos em formação avançada.</p>
       <p>Todas as nossas vagas são <strong>valor social</strong>, online, do primeiro contato à alta. Sem cotas, sem critérios complicados, sem fila. Quem chega primeiro, é atendido. O mesmo valor é cobrado na primeira consulta e em todos os retornos — informado de forma transparente no momento do agendamento.</p>
       <p>Aqui, fila pequena é proposta, não defeito.</p>
+      <div style="margin-top:32px"><button class="btn btn-primary" onclick="goView('patient')">Agendar consulta</button></div>
     </div>
   </section>
 
@@ -414,6 +415,7 @@
         <div class="passo"><div class="passo-num">02</div><h4>Preencha e pague</h4><p>Nome, contato e uma breve descrição da queixa. O pagamento é feito pelo Pix ou cartão na própria tela do agendamento para confirmar a vaga.</p></div>
         <div class="passo"><div class="passo-num">03</div><h4>Receba a confirmação</h4><p>Confirmação por WhatsApp e e-mail, com o link da consulta online.</p></div>
       </div>
+      <div style="text-align:center;margin-top:36px"><button class="btn btn-primary" onclick="goView('patient')">Agendar consulta</button></div>
     </div>
   </section>
 
@@ -428,6 +430,7 @@
         <p>O serviço público é qualificado, mas absorvido por uma demanda imensa. A clínica privada, por outro lado, costuma ser inacessível à maior parte de quem precisa. <strong>A Elevar existe no espaço entre os dois</strong> — um valor que viabiliza o trabalho médico e ainda assim cabe no orçamento de quem está procurando ajuda.</p>
         <p>Quem chega primeiro, é atendido. Sem cota, sem fila, sem critério a comprovar. Confiamos que as pessoas se candidatam quando precisam. Quem pode pagar valor de mercado tem opções abundantes — preferimos guardar nossas vagas para quem encontra barreira real de acesso, sem precisar transformar isso em burocracia.</p>
       </div>
+      <div style="text-align:center;margin-top:36px"><button class="btn btn-primary" onclick="goView('patient')">Agendar consulta</button></div>
     </div>
   </section>
 
@@ -479,34 +482,6 @@
     </div>
   </section>
 
-  <section class="block ebooks">
-    <div class="container">
-      <div class="label-sm">Materiais gratuitos</div>
-      <h2>Dois <em>e-books</em> para tirar dúvidas comuns.</h2>
-      <p class="intro">Conteúdo educativo escrito pela equipe Elevar. Receba os dois no seu e-mail para ler quando precisar — sem custo, sem spam.</p>
-      <div class="ebooks-grid">
-        <div class="eb-card">
-          <div class="eb-cover">
-            <div class="num">Edição I</div>
-            <div class="t">Antidepressivos <em>sem medo</em>.</div>
-          </div>
-          <div class="eb-meta">Guia · 16 páginas</div>
-          <div class="eb-desc">O que são, como funcionam, quanto tempo demoram a fazer efeito, os seis medos mais comuns e o que esperar dos primeiros 14 dias. Linguagem clínica acessível, sem prometer cura.</div>
-          <div class="eb-actions"><button class="btn btn-primary btn-small" onclick="openEbookModal()">Receber por e-mail</button></div>
-        </div>
-        <div class="eb-card">
-          <div class="eb-cover">
-            <div class="num">Edição II</div>
-            <div class="t"><em>30 perguntas</em> antes de começar tratamento.</div>
-          </div>
-          <div class="eb-meta">Guia · 18 páginas</div>
-          <div class="eb-desc">Trinta perguntas em seis blocos para levar à consulta — sobre o profissional, o diagnóstico, a medicação, o tratamento, os efeitos, o seguimento. Cuidar é também perguntar.</div>
-          <div class="eb-actions"><button class="btn btn-primary btn-small" onclick="openEbookModal()">Receber por e-mail</button></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <section class="block vagas">
     <div class="container">
       <div class="label-sm">Vagas do mês corrente</div>
@@ -515,7 +490,7 @@
         <div><div class="vaga-num" id="vagasTotal">—</div><div class="vaga-label">Vagas totais</div></div>
         <div><div class="vaga-num" id="vagasDisp" style="color:#fff">—</div><div class="vaga-label">Disponíveis</div></div>
       </div>
-      <div style="margin-top:48px"><button class="btn btn-light" onclick="goView('patient')">Ver calendário</button></div>
+      <div style="margin-top:48px"><button class="btn btn-light" onclick="goView('patient')">Agendar consulta</button></div>
     </div>
   </section>
 
